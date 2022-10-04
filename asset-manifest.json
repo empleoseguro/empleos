@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/empleos/static/css/main.073c9b0a.css",
-    "main.js": "/empleos/static/js/main.8020bd9c.js",
+    "main.css": "/empleos/static/css/main.431b4617.css",
+    "main.js": "/empleos/static/js/main.ca36748b.js",
     "static/js/787.f97787fa.chunk.js": "/empleos/static/js/787.f97787fa.chunk.js",
+    "static/media/trabajo13c.webp": "/empleos/static/media/trabajo13c.8c3a3c9f7a6a5eada6ac.webp",
+    "static/media/trabajo7.webp": "/empleos/static/media/trabajo7.6f08d537d9109a479021.webp",
+    "static/media/trabajo3.webp": "/empleos/static/media/trabajo3.23176a413f155e908bf1.webp",
+    "static/media/trabajo10.webp": "/empleos/static/media/trabajo10.87d3122742d25518bc4b.webp",
     "static/media/logo.svg": "/empleos/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/empleos/index.html",
-    "main.073c9b0a.css.map": "/empleos/static/css/main.073c9b0a.css.map",
-    "main.8020bd9c.js.map": "/empleos/static/js/main.8020bd9c.js.map",
+    "static/media/favicon.svg": "/empleos/static/media/favicon.61b8059b4edaed7d6d10558201f06f9d.svg",
+    "main.431b4617.css.map": "/empleos/static/css/main.431b4617.css.map",
+    "main.ca36748b.js.map": "/empleos/static/js/main.ca36748b.js.map",
     "787.f97787fa.chunk.js.map": "/empleos/static/js/787.f97787fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8020bd9c.js"
+    "static/css/main.431b4617.css",
+    "static/js/main.ca36748b.js"
   ]
 }
