@@ -1,22 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { NavBar } from './components/organisms/NavBar/NavBar';
+import { Home } from './components/organisms/Home/Home';
+import { Inicio } from './components/organisms/Inicio/Inicio';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Jeremy es marico
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-que hay        </a>
-      </header>
+      <NavBar />   
+      <div className='mt-2'></div>
+       <Inicio/>
     </div>
   );
 }

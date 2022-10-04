@@ -1,0 +1,15 @@
+.image-lg {
+    width: auto;
+    height:auto;
+}
+
+.card {
+    color: #404a51;
+}
+
+.text-image{
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

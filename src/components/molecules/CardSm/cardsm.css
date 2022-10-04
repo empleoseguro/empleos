@@ -1,0 +1,11 @@
+.cardsm {
+    text-align: start;
+    background-color:  #dee5ec;
+    height: auto;
+}
+
+.image-sm {
+    object-fit: cover;
+    width:100%;
+    height:calc(1em + 11vw);
+}
