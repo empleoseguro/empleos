@@ -9,7 +9,13 @@ export const info = {
         "El 80% del éxito se basa simplemente en insistir.",
         "Lo único imposible es aquello que no intentas."
     ],
-    consejos: [
-        { title: '¿Cómo encontrar trabajo rápidamente?, aquí te lo contamos.' }
+    data: [
+        {
+            title: '¿Cómo encontrar trabajo rápidamente?, aquí te lo contamos.',
+            description: 'Es posible que en algún momento de tu vida profesional necesites' +
+                'encontrar un trabajo con urgencia. Esta tarea puede resultar un proceso dificil' +
+                'pero con esfuerzo y dedicación puedes encontrar un puesto que satisfaga tus necesidades.',
+            category: 'consejos'
+        }
     ]
 }
