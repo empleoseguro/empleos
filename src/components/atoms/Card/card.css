@@ -1,0 +1,17 @@
+.image-md {
+    width: 100%;
+    height: calc(1rem + 20vh);
+    object-fit: cover;
+}
+
+.image-sm {
+  
+    object-fit: cover;
+}
+
+.image-lg {
+    width: 100%;
+    height: calc(1rem + 34.7vh);
+    object-fit: cover;
+    
+}

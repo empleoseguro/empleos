@@ -1,8 +1,12 @@
 .App {  
-  background-color: #f3f7fa;
-  /* background-color: blueviolet; */
+  background-color: #ecf2f7;
+  /* background-color:darkslategray; */
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.icon-sm {
+  width: 24px;
+  height: 24px;
+}
 
 
