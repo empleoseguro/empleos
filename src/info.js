@@ -15,7 +15,7 @@ export const info = {
             description: 'Es posible que en algún momento de tu vida profesional necesites' +
                 'encontrar un trabajo con urgencia. Esta tarea puede resultar un proceso dificil' +
                 'pero con esfuerzo y dedicación puedes encontrar un puesto que satisfaga tus necesidades.',
-            category: 'consejos'
+            category: 'recomendaciones'
         }
     ]
 }

@@ -1,14 +1,23 @@
 import React from 'react'
-import  Card  from '../../atoms/Card/Card'
+import { info } from '../../../info'
+import Card from '../../atoms/Card/Card'
 import './recomendaciones.css'
 
 
 
 const Recomendaciones = () => {
 
+    const recomendaciones = info.data
+
     return (
         <div className='recomendaciones'>
-            <Card category='recomendaciones' />
+            <div className=' fs-6 fw-bold text-center w-100 mb-1'>RECOMENDACIONES</div>
+            {
+                recomendaciones.map((item, key) => (
+                    <Card category={item.category} />
+                ))
+            }
+
         </div>
 
     )

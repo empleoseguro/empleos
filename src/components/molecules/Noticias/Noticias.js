@@ -5,7 +5,7 @@ import './noticias.css'
 const Noticias = () => {
     return (
         <div className='noticias rounded'>
-            <div className='titulares fs-6 fw-bold  text-center w-100 mb-1'>NOTICIAS</div>
+            <div className=' fs-6 fw-bold text-center w-100 mb-1'>NOTICIAS</div>
             <Card category="noticias" />
         </div>
     )

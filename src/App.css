@@ -1,5 +1,5 @@
 .App {  
-  background-color: #ecf2f7;
+  background-color: #dce1e5;
   /* background-color:darkslategray; */
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -9,4 +9,7 @@
   height: 24px;
 }
 
+a {
+  color: black;
+}
 
