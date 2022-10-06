@@ -17,11 +17,11 @@ function App() {
 
       <NavBar />
       <Routes>
-        <Route path="/" element={<Inicio />}>
+        <Route path="/empleos" element={<Inicio />}>
           
         </Route>
-        <Route path='post' element={<SinglePost />} />
-        <Route path="formulario" element={<Formulario />} />
+        <Route path='empleos/post' element={<SinglePost />} />
+        <Route path="empleos/formulario" element={<Formulario />} />
       </Routes>
       <Footer />
 
