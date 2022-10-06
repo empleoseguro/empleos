@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
 
             </div>
-         
+            <div className='fs-6 text-center border-top border-secondary  text-light px-1'>© 2022, Adprosoft, Inc.</div>
         </div>
     )
 }
