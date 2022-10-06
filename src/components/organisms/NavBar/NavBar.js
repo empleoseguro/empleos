@@ -16,10 +16,10 @@ export const NavBar = () => {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto fw-bold">
-                        <Link to="/" className='"nav-item nav-link'>INICIO</Link>
-                        <Link to="formulario" className='"nav-item nav-link'>FORMULARIO</Link>
-                        <Link to="post" className='"nav-item nav-link'>POST</Link>
-                        <Link to="post" className='"nav-item nav-link'>AYUDA</Link>
+                        <Link to="empleos" className='"nav-item nav-link'>INICIO</Link>
+                        <Link to="empleos/formulario" className='"nav-item nav-link'>FORMULARIO</Link>
+                        <Link to="empleos/post" className='"nav-item nav-link'>POST</Link>
+                        <Link to="empleos/post" className='"nav-item nav-link'>AYUDA</Link>
                     </div>
                 </div>
             </div>
