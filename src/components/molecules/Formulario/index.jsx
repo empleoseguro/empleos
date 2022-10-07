@@ -28,21 +28,18 @@ const Formulario = () => {
 
     return (
         <BaseTemplate>
-            <div className='anuncio w-100 bg-secondary text-dark text-center py-5 mb-2 text-center rounded'>
-                anuncio caiman
-            </div>
             <div className='container bg-light py-2 mb-2'>
                 <form onSubmit={handleOnSubmit}>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <div className="mb-3">
+                        <label htmlFor="exampleFormControlInput1" className="form-label">Nombre</label>
                         <small className='text-secondary'> *</small>
-                        <input type="text" name='name' class="form-control" id="exampleFormControlInput1" placeholder="Mario Ejemplo" />
+                        <input type="text" name='name' className="form-control" id="exampleFormControlInput1" placeholder="Mario Ejemplo" />
                     </div>
 
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Localidad</label>
-                        <select name='localidad' onChange={handleOnChange} class="form-select">
-                            <option selected>Selecciona tu país</option>
+                    <div className="mb-3">
+                        <label htmlFor="exampleFormControlInput1" className="form-label">Localidad</label>
+                        <select value="" name='localidad' onChange={handleOnChange} className="form-select">
+                            <option>Selecciona tu país</option>
                             <option value="estados unidos">Estados Unidos</option>
                             <option value="españa">España</option>
                             <option value="puerto rico">Puerto Rico</option>
@@ -57,23 +54,23 @@ const Formulario = () => {
                         </select>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Puesto a desear</label>
+                    <div className="mb-3">
+                        <label htmlFor="exampleFormControlInput1" className="form-label">Puesto a desear</label>
                         <small className='text-secondary'> *</small>
                         <input
                             name='puesto'
                             onChange={handleOnChange}
-                            type="text" class="form-control"
+                            type="text" className="form-control"
                             placeholder="Herrer@, niñer@, cociner@..." />
                     </div>
 
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Información</label>
-                        <small className='text-secondary'> opcional</small>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div className="mb-3">
+                        <label htmlFor="exampleFormControlTextarea1" className="form-label">Información</label>
+                        <small className='text-dark'> (opcional)</small>
+                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div className='d-flex justify-content-center mb-2'>
-                        <button disabled={disabled} type="button" class="boton btn btn-lg text-center" onClick={handleOnSubmit}>Aplicar puesto</button>
+                        <button disabled={disabled} type="button" className="boton btn btn-lg text-center" onClick={handleOnSubmit}>Aplicar puesto</button>
 
                     </div>
                 </form>

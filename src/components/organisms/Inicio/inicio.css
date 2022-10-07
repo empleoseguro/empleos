@@ -1,37 +1,3 @@
-    .texts-image {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.container-text {
-    padding: 1rem;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.47102591036414565) 0%, rgba(150,150,150,0.0984768907563025) 68%, rgba(189,189,189,0) 100%);    
-    text-shadow: 2px 2px #0000008b;
-    width: 100%;
-    height: 80%;
-    text-align: left;
-}
-
-
-
-.image {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-}
-
-
-
 .titulares {
     background-color: #fff;
     color: #000000;

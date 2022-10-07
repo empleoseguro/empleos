@@ -34,7 +34,7 @@ const Recomendaciones = () => {
                 <div className="col-md-8">
                     <div className="card-body">
                         <h5 className="card-title">Card title. <a href='#'><img alt='icono de abrir' src={abrir} className='mb-1' /></a></h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is.</p>
+                        <p className="card-text text-recomendaciones">This is a wider card with supporting text below as a natural lead-in to additional content. This content is.</p>
                         <small className="text-muted border-top w-100 d-flex">4 mins read</small>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ const Noticias = () => {
             <img src={require('../../../images/trabajo10.webp')} className="card-img-top" alt="imagen noticia" />
             <div className="card-body">
                 <div className='fs-6 fw-bold'>Los empleos mejores pagado en el 2022. <a href='#'><img alt='icono de abrir' src={abrir} className='mb-1' /></a></div>
-                <small className="card-text text-secondary ">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small>
+                <small className="card-text text-secondary text-noticias">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small>
                 <p className="card-text border-top"><small className="text-muted">3m read</small></p>
             </div>
         </div>

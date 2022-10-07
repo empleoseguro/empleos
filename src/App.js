@@ -8,6 +8,7 @@ import BaseTemplate from './components/templates/BaseTemplate';
 import Footer from './components/organisms/Footer';
 import { useState } from 'react';
 import Formulario from './components/molecules/Formulario';
+import About from './components/Pages/About';
 
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/empleos" element={<Inicio />}>
-          
+
         </Route>
         <Route path='empleos/post' element={<SinglePost />} />
         <Route path="empleos/formulario" element={<Formulario />} />
+        <Route path="empleos/about" element={<About />} />
       </Routes>
       <Footer />
 

@@ -14,7 +14,9 @@ const Recomendaciones = () => {
             <div className=' fs-6 fw-bold text-center w-100 mb-1'>RECOMENDACIONES</div>
             {
                 recomendaciones.map((item, key) => (
+                    <div key={key}>
                     <Card category={item.category} />
+                    </div>
                 ))
             }
 

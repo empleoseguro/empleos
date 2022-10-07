@@ -5,21 +5,21 @@ import favicon from './favicon.svg'
 
 export const NavBar = () => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
-            <div class="container">
-                <a href="#" class="navbar-brand  d-flex flex-row align-items-center">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light mb-2">
+            <div className="container">
+                <a href="#" className="navbar-brand  d-flex flex-row align-items-center">
                     <img src={favicon} className='logo' height="28" alt="EmpleoSeguro Icon" />
                     <div className='nav-title ms-1 text-dark'>MPLEO SEGURO</div>
                 </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
+                <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto fw-bold">
+                <div className="collapse navbar-collapse" id="navbarCollapse">
+                    <div className="navbar-nav ms-auto fw-bold">
                         <Link to="empleos" className='"nav-item nav-link'>INICIO</Link>
                         <Link to="empleos/formulario" className='"nav-item nav-link'>FORMULARIO</Link>
                         <Link to="empleos/post" className='"nav-item nav-link'>POST</Link>
-                        <Link to="empleos/post" className='"nav-item nav-link'>AYUDA</Link>
+                        <Link to="empleos/about" className='"nav-item nav-link'>AYUDA</Link>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ export const NavBar = () => {
     )
 }
 
-{/* </nav> <a href="#" class="navbar-brand">
+{/* </nav> <a href="#" className="navbar-brand">
                     <img className='logo' src={favicon} />
-                    <a class="navbar-brand" href="#">MPLEO SEGURO</a>
+                    <a className="navbar-brand" href="#">MPLEO SEGURO</a>
                 </a> */}
