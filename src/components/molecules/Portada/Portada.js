@@ -14,7 +14,7 @@ const Portada = () => {
                 {
                     eslogan.map((item, key) => (
                         <div className={`carousel-item ${item.status}`} key={key}>
-                            <img className='image' alt={`imagen del eslogan: ${item.title}`} src={require(`../../../images/${item.imagen}`)} />
+                            <img loading='lazy' className='image' alt={`imagen del eslogan: ${item.title}`} src={require(`../../../images/${item.imagen}`)} />
                             <div className='text-image'>{item.title}</div>
                         </div>
                     ))

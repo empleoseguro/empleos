@@ -1,57 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useUser } from "../../../hooks/useGetPosts";
 import './SinglePost.css'
 
 import BaseTemplate from "../../templates/BaseTemplate";
-import ButtonIcon from "../../atoms/ButtonIcon";
+import { ShareButton } from "../../atoms/ShareButton";
+import ParagraphPost from "../../atoms/ParagraphPost";
+import { useParams } from "react-router-dom";
+import { API } from "../../../utils/config";
+import { fetchPostById } from "../../../utils/actions";
+import { readingTime } from "../../../utils/functions";
 
 
-const SinglePost = ({ title }) => {
+const SinglePost = ({ data: datos }) => {
+
+    const [data, setdata] = useState([])
+
+    const { postId } = useParams()
+
+    useEffect(() => {
+        (async () => {
+            const response = await fetchPostById(postId)
+            setdata(response.data)
+        })()
+
+    }, [postId])
+
     return (
-        <BaseTemplate>
+        <BaseTemplate mostViewed={datos}>
 
             <div className="card rounded-0 shadow bg-light">
-                <img src={require('../../../images/trabajo3.webp')} className="img-fluid" alt="imagen del post" />
+                <img loading='lazy' src={data['attributes']?.image} className="img-fluid" alt="imagen del post" />
+                <article>
+                    <h1 className="ps-3 mt-2">
+                        {data?.attributes?.title}
+                    </h1>
 
-                <div className="card-title titleSinglePost ps-3 mt-3">
-                    My Firts Post!
-                </div>
+                    <ParagraphPost text={data?.attributes?.description} />
+                </article>
 
-                <div className="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur dolor metus,
-                        in semper purus tempus nec. Nunc porta maximus nisi eget tempus. Maecenas tellus ligula,
-                        porttitor ut ligula vitae, porta malesuada libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur dolor metus,
-                        in semper purus tempus nec. Nunc porta maximus nisi eget tempus. Maecenas tellus ligula,
-                        porttitor ut ligula vitae, porta malesuada libero.</p><br />
-                    <br />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur dolor metus,
-                        in semper purus tempus nec. Nunc porta maximus nisi eget tempus. Maecenas tellus ligula,
-                        porttitor ut ligula vitae, porta malesuada libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur dolor metus,
-                        in semper purus tempus nec. Nunc porta maximus nisi eget tempus. Maecenas tellus ligula,
-                        porttitor ut ligula vitae, porta malesuada libero.
-                        .</p><br />
-                    <br />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur dolor metus,
-                        in semper purus tempus nec. Nunc porta maximus nisi eget tempus. Maecenas tellus ligula,
-                        porttitor ut ligula vitae, porta malesuada libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur dolor metus,
-                        in semper purus tempus nec. Nunc porta maximus nisi eget tempus. Maecenas tellus ligula,
-                        porttitor ut ligula vitae, porta malesuada libero.</p>
-                </div>
-                <div className="card-footer postFooter bg-dark p-3 pe-0">
+
+                <div className="card-footer postFooter bg-dark mt-5 p-3 pe-0">
                     <div className='d-flex flex-row justify-content-between'>
                         <div className=" align-self-center">
                             Compartir post
                         </div>
-                        <div className="d-flex flex-row">
-                            <div className="me-4">
-                                <ButtonIcon icon='twitter' />
-                            </div>
-                            <div className="me-4">
-                                <ButtonIcon icon='facebook' />
-                            </div>
-                            <div className="me-4">
-                                <ButtonIcon icon='instagram' />
-
-                            </div>
+                        <div className="row row-cols-3 gx-4 me-1">
+                            <ShareButton type='facebook' />
+                            <ShareButton type='twitter' />
+                            <ShareButton type='whatsapp' />
                         </div>
 
                     </div>

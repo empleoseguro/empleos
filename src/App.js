@@ -9,21 +9,26 @@ import Footer from './components/organisms/Footer';
 import { useState } from 'react';
 import Formulario from './components/molecules/Formulario';
 import About from './components/Pages/About';
+import { useGetPosts, useUser } from './hooks/useGetPosts';
 
 
 function App() {
+
+  const data = useGetPosts()
+
+
 
   return (
     <div className="App">
 
       <NavBar />
       <Routes>
-        <Route path="/empleos" element={<Inicio />}>
+        <Route path="/empleos" element={<Inicio data={data} />}>
 
         </Route>
-        <Route path='empleos/post' element={<SinglePost />} />
-        <Route path="empleos/formulario" element={<Formulario />} />
-        <Route path="empleos/about" element={<About />} />
+        <Route path='empleos/post/:postId' element={<SinglePost data={data} />} />
+        <Route path="empleos/formulario" element={<Formulario data={data} />} />
+        <Route path="empleos/about/:section" element={<About data={data} />} />
       </Routes>
       <Footer />
 

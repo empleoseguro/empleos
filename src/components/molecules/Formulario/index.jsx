@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import BaseTemplate from '../../templates/BaseTemplate'
 import './formulario.css'
 
-const Formulario = () => {
+const Formulario = ({data}) => {
 
     const [localidad, setLocalidad] = useState({})
     const [puesto, setPuesto] = useState({})
@@ -27,7 +27,7 @@ const Formulario = () => {
     }
 
     return (
-        <BaseTemplate>
+        <BaseTemplate mostViewed={data}>
             <div className='container bg-light py-2 mb-2'>
                 <form onSubmit={handleOnSubmit}>
                     <div className="mb-3">

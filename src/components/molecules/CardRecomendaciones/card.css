@@ -1,22 +1,13 @@
-.image-md {
-    width: 100%;
-    height: calc(1rem + 20vh);
+.imagen {
     object-fit: cover;
-}
-
-.image-sm {
-    object-fit: cover;
-}
-
-.image-lg {
-    width: 100%;
-    height: calc(1rem + 34.7vh);
-    object-fit: cover;
-
 }
 
 .title {
     font-size: calc(0.01rem + 1vw);
+}
+
+.icon-red {
+    cursor: pointer;
 }
 
 .text-recomendaciones {
@@ -28,14 +19,13 @@
     -webkit-box-orient: vertical;
 }
 
-
-.text-noticias {
+.title-recomendaciones {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
-    line-height: 23px;
-    padding-top: 4px;
+    -webkit-line-clamp: 2;
     /* number of lines to show */
     -webkit-box-orient: vertical;
 }
+
+

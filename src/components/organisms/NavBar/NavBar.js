@@ -8,7 +8,7 @@ export const NavBar = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light mb-2">
             <div className="container">
                 <a href="#" className="navbar-brand  d-flex flex-row align-items-center">
-                    <img src={favicon} className='logo' height="28" alt="EmpleoSeguro Icon" />
+                    <img loading='lazy' src={favicon} className='logo' height="28" alt="EmpleoSeguro Icon" />
                     <div className='nav-title ms-1 text-dark'>MPLEO SEGURO</div>
                 </a>
                 <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -18,7 +18,6 @@ export const NavBar = () => {
                     <div className="navbar-nav ms-auto fw-bold">
                         <Link to="empleos" className='"nav-item nav-link'>INICIO</Link>
                         <Link to="empleos/formulario" className='"nav-item nav-link'>FORMULARIO</Link>
-                        <Link to="empleos/post" className='"nav-item nav-link'>POST</Link>
                         <Link to="empleos/about" className='"nav-item nav-link'>AYUDA</Link>
                     </div>
                 </div>
@@ -27,8 +26,3 @@ export const NavBar = () => {
 
     )
 }
-
-{/* </nav> <a href="#" className="navbar-brand">
-                    <img className='logo' src={favicon} />
-                    <a className="navbar-brand" href="#">MPLEO SEGURO</a>
-                </a> */}

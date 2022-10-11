@@ -1,19 +1,30 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import BaseTemplate from '../../templates/BaseTemplate'
 import './about.css'
 
-const About = () => {
+const About = ({ data }) => {
+
+    const { section } = useParams()
+
     const [mode, setMode] = useState('politics')
 
     const handleOnClick = (param) => {
         setMode(param)
     }
 
+    useEffect(() => {
+        handleOnClick(section)
+    }, [])
+
+
+
+
     return (
-        <BaseTemplate>
-            <div className='container'>
-                <div className='bg-light row row-cols-2'>
-                    <div className='w-auto border-end'>
+        <BaseTemplate mostViewed={data}>
+            <div className='container  p-0'>
+                <div className='d-flex flex-column flex-lg-row bg-light'>
+                    <div className='border-end w-auto'>
                         <ul className="nav flex-column">
                             <li className="nav-item border-bottom">
                                 <a className="nav-link fs-6 text-dark active" aria-current="page" onClick={() => handleOnClick('politics')} href="#">Política de privacidad</a>
@@ -30,10 +41,10 @@ const About = () => {
                             <li className="nav-item border-bottom">
                                 <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
                             </li>
-                         
+
                         </ul>
                     </div>
-                    <div className='container col-8'>
+                    <div className='container w-100 p-2'>
                         {
                             evaluate(mode)
                         }
@@ -44,6 +55,8 @@ const About = () => {
         </BaseTemplate>
     )
 }
+
+
 
 const evaluate = (type) => {
     let component
@@ -97,11 +110,11 @@ const AboutUs = () => {
         <div className='mt-3' >
             <h1><strong>¿Quiénes somos?</strong></h1>
             <p>Empleo Seguro es un blog informativo cuya función es optimizar, orientar, motivar, enseñar a que usted
-                lector, tenga un mejor desempeño en su trabajo, les mostraremos unas pequeñas estrategias y Ttips
+                lector, tenga un mejor desempeño en su trabajo, les mostraremos unas pequeñas estrategias y tipsips
                 para su día a día, esperamos que les sea útil la información que disponemos, tenemos una sección
                 de noticias, para que este al tanto de lo que pasa en el mundo laboralmente, estaremos implementando
                 Cosas nuevas, para que su visita sea recurrente. Esperamos que nuestro contenido sea de su agrado
-                Y mejor aún, le ayude para crecer.
+                Y mejor aún, le ayude a crecer.
             </p>
         </div>
     )

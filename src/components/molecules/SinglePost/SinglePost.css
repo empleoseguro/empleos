@@ -1,12 +1,7 @@
-p{
-    text-indent: 30px;
-    margin: 0px;
-    font-size: 18px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    line-height: 30px;
-    text-rendering: auto;
-  }
+.img-fluid {
+    max-height: 50vh;
+    object-fit: cover;
+}
 
 .titleSinglePost {
     font-size: 32px !important;
