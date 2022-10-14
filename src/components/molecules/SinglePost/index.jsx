@@ -31,7 +31,7 @@ const SinglePost = ({ data: datos }) => {
             <div className="card rounded-0 shadow bg-light">
                 <img loading='lazy' src={data['attributes']?.image} className="img-fluid" alt="imagen del post" />
                 <article>
-                    <h1 className="ps-3 mt-2">
+                    <h1 className="ps-3 mt-3">
                         {data?.attributes?.title}
                     </h1>
 

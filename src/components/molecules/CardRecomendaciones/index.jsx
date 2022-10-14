@@ -7,6 +7,9 @@ import instagram from '../../../images/instagram.svg'
 import abrir from '../../../images/abrir.svg'
 import moment from 'moment'
 import { readingTime } from '../../../utils/functions'
+import TitleCard from '../../atoms/TitleCard'
+import DescriptionCard from '../../atoms/DescriptionCard'
+
 
 const CardRecomendaciones = ({ item }) => {
 
@@ -19,7 +22,7 @@ const CardRecomendaciones = ({ item }) => {
     useEffect(() => {
         readingTime(item['attributes']?.title + item['attributes']?.description)
     }, [])
-    
+
 
     return (
         <div className="card w-100 mb-2" onClick={() => handleOnClick()}>
@@ -29,10 +32,11 @@ const CardRecomendaciones = ({ item }) => {
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">
-                        <h5 className="title-recomendaciones card-title m-0 mb-1">{item['attributes']?.title}<a href='#'><img loading='lazy' alt='icono de abrir' src={abrir} className='' /></a></h5>
-                        <p className="card-text text-recomendaciones">{item['attributes']?.description}</p>
-                        <small className="text-muted border-top w-100 d-flex"><span id='time'></span> m de lectura</small>
-                    </div>
+                        <TitleCard className="title-recomendaciones" title={item['attributes']?.title} />
+                      
+                        <DescriptionCard className="text-recomendaciones text-secondary" description={item['attributes']?.description}/>
+                    <small className="text-muted border-top w-100 d-flex"><span id='time'></span> m de lectura</small>
+                </div>
                 </div>
                 <div className='d-flex flex-row justify-content-between text-end px-2 py-1 align-items-center w-100'>
                     <div className='d-flex flex-lg-row mx-1 text-start'>
