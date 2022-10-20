@@ -1,24 +1,8 @@
 {
   "files": {
-    "main.css": "/empleos/static/css/main.23241af6.css",
-    "main.js": "/empleos/static/js/main.5ba2cd3d.js",
+    "main.css": "/empleos/static/css/main.895501ae.css",
+    "main.js": "/empleos/static/js/main.497aef49.js",
     "static/js/787.f97787fa.chunk.js": "/empleos/static/js/787.f97787fa.chunk.js",
-    "static/media/trabajo13.webp": "/empleos/static/media/trabajo13.b371eb0fa5457e82393d.webp",
-    "static/media/eslogan2.webp": "/empleos/static/media/eslogan2.8c3a3c9f7a6a5eada6ac.webp",
-    "static/media/trabajo2.webp": "/empleos/static/media/trabajo2.068441e36dd3b994e325.webp",
-    "static/media/eslogan3.jpg": "/empleos/static/media/eslogan3.12cb8a23ba8de2675601.jpg",
-    "static/media/eslogan1.webp": "/empleos/static/media/eslogan1.c44c9a179433626042d8.webp",
-    "static/media/trabajo9.webp": "/empleos/static/media/trabajo9.121ab40301f05e10c56a.webp",
-    "static/media/trabajo.webp": "/empleos/static/media/trabajo.69d0698755873e5c5e6c.webp",
-    "static/media/trabajo7.webp": "/empleos/static/media/trabajo7.6f08d537d9109a479021.webp",
-    "static/media/trabajo5.jpg": "/empleos/static/media/trabajo5.fc9b80e936cd1743daa3.jpg",
-    "static/media/trabajo3.webp": "/empleos/static/media/trabajo3.23176a413f155e908bf1.webp",
-    "static/media/trabajo10.webp": "/empleos/static/media/trabajo10.87d3122742d25518bc4b.webp",
-    "static/media/trabajo12.webp": "/empleos/static/media/trabajo12.f178a9c490e2721538bd.webp",
-    "static/media/trabajo4.webp": "/empleos/static/media/trabajo4.51fc4e9c9c21ab28cea2.webp",
-    "static/media/trabajo6.webp": "/empleos/static/media/trabajo6.4b346b77c18c9c4f9ce0.webp",
-    "static/media/trabajo11.webp": "/empleos/static/media/trabajo11.fce76536d8c00f93bbca.webp",
-    "static/media/trabajo8.webp": "/empleos/static/media/trabajo8.36601284c39b7918362a.webp",
     "static/media/logo.svg": "/empleos/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/whatsapp.svg": "/empleos/static/media/whatsapp.73b7bd7e03f3eee0d8052a8d2c416964.svg",
     "static/media/abrir.svg": "/empleos/static/media/abrir.53da619c3026794036d69194b8b4dbc1.svg",
@@ -27,12 +11,12 @@
     "static/media/instagram.svg": "/empleos/static/media/instagram.9e6badfc6471aaf67a5ff0c8bb928ab6.svg",
     "static/media/facebook.svg": "/empleos/static/media/facebook.d3c70ac422633821aa9aba52981596aa.svg",
     "static/media/favicon.svg": "/empleos/static/media/favicon.61b8059b4edaed7d6d10558201f06f9d.svg",
-    "main.23241af6.css.map": "/empleos/static/css/main.23241af6.css.map",
-    "main.5ba2cd3d.js.map": "/empleos/static/js/main.5ba2cd3d.js.map",
+    "main.895501ae.css.map": "/empleos/static/css/main.895501ae.css.map",
+    "main.497aef49.js.map": "/empleos/static/js/main.497aef49.js.map",
     "787.f97787fa.chunk.js.map": "/empleos/static/js/787.f97787fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23241af6.css",
-    "static/js/main.5ba2cd3d.js"
+    "static/css/main.895501ae.css",
+    "static/js/main.497aef49.js"
   ]
 }
