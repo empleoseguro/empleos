@@ -18,10 +18,11 @@ const SinglePost = ({ data: datos }) => {
     const { postId } = useParams()
 
     useEffect(() => {
-        (async () => {
-            const response = await fetchPostById(postId)
-            setdata(response.data)
-        })()
+
+        const response = fetchPostById(postId)
+        
+        setdata(response.data[0])
+
 
     }, [postId])
 

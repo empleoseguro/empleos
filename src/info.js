@@ -2,25 +2,25 @@ export const info = {
     eslogan: [
         {
             status: 'active',
-            imagen: 'eslogan1.webp',
+            imagen: 'https://i.ibb.co/hCb135j/eslogan1.webp',
             title: "El éxito no está en vencer siempre sino en no desanimarse nunca."
         },
         {
-            imagen: 'eslogan2.webp',
+            imagen: 'https://i.ibb.co/gy2xGJN/eslogan2.jpg',
             title: "La tragedia no es no alcanzar tus objetivos, la tragedia es no tener objetivos que alcanzar."
         },
         {
-            imagen: 'eslogan3.jpg',
+            imagen: 'https://i.ibb.co/bzFbLW6/eslogan3.webp',
             title: "Nunca pares, nunca te conformes, hasta que lo bueno sea mejor y lo mejor excelente. Anónimo."
         },
-        // {
-        //     imagen: 'eslogan1.webp',
-        //     title: "El 80% del éxito se basa simplemente en insistir."
-        // },
-        // {
-        //     imagen: 'eslogan1.webp',
-        //     title: "Si tú sabes lo que vales, ve y consigue lo que mereces."
-        // },
+        {
+            imagen: 'https://i.ibb.co/q9BmrrQ/eslogan4.webp',
+            title: "El 80% del éxito se basa simplemente en insistir."
+        },
+        {
+            imagen: 'https://i.ibb.co/KVdcJRZ/eslogan5.webp',
+            title: "Si tú sabes lo que vales, ve y consigue lo que mereces."
+        },
         // {
         //     imagen: 'eslogan1.webp',
         //     title: "Por muy alta que sea una montaña, siempre hay un camino hacia la cima."

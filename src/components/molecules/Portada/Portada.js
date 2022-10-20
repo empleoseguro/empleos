@@ -8,13 +8,13 @@ const Portada = () => {
 
     return (
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-            
+
             <div className="carousel-inner ">
 
                 {
                     eslogan.map((item, key) => (
                         <div className={`carousel-item ${item.status}`} key={key}>
-                            <img loading='lazy' className='image' alt={`imagen del eslogan: ${item.title}`} src={require(`../../../images/${item.imagen}`)} />
+                            <img loading='lazy' className='image' alt={`imagen del eslogan: ${item.title}`} src={item.imagen} />
                             <div className='text-image'>{item.title}</div>
                         </div>
                     ))

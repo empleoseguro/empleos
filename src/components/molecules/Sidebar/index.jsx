@@ -10,9 +10,9 @@ const Sidebar = ({ mostViewed }) => {
                 <ul className="list-group list-group-flush">
 
                     {
-                        mostViewed?.slice(0, 3).map((item, key) => (
+                        mostViewed?.slice(0, 7).map((item, key) => (
                             <li className="list-group-item" key={key}>
-                                <a href={item?.id}>
+                                <a className='text-list' href={item?.id}>
                                     {item?.attributes['title']}
                                 </a>
                             </li>
