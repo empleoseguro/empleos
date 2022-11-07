@@ -30,7 +30,11 @@ const SinglePost = ({ data: datos }) => {
         <BaseTemplate mostViewed={datos}>
 
             <div className="card rounded-0 shadow bg-light">
-                <img loading='lazy' src={data['attributes']?.image} className="img-fluid" alt="imagen del post" />
+               <div className="contenedor">
+               <img loading='lazy' src={data['attributes']?.image} className="img-fluid" alt="imagen del post" />
+                <a className="text-imagen" href={`https://www.freepik.es/autor/${data['attributes']?.image_autor}`} target="_blank">freepik image by: {data['attributes']?.image_autor}</a>
+               </div>
+               
                 <article>
                     <h1 className="ps-3 mt-3">
                         {data?.attributes?.title}

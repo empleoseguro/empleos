@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { useGetPosts, useUser } from '../../../hooks/useGetPosts'
-import { fetchAllPosts } from '../../../utils/actions'
+import React, { useState } from 'react'
 import CardNoticias from '../../molecules/CardNoticias'
 import CardRecomendaciones from '../../molecules/CardRecomendaciones'
 import Portada from '../../molecules/Portada/Portada'
@@ -21,11 +19,13 @@ export const Inicio = ({ data }) => {
                 pages = [0, 4]
                 break;
             case 2:
-                pages = [5, 9]
+                pages = [4, 8]
                 break;
             case 3:
-                pages = [10, 14]
+                pages = [8, 12]
                 break;
+            case 4:
+                pages = [12, 16]
             default:
                 pages = [0, 4]
                 break;
@@ -43,9 +43,12 @@ export const Inicio = ({ data }) => {
                 pages = [0, 2]
                 break;
             case 2:
-                pages = [3, 5]
+                pages = [2, 4]
                 break;
             case 3:
+                pages = [4, 6]
+                break;
+            case 4:
                 pages = [6, 8]
                 break;
             default:
@@ -57,8 +60,6 @@ export const Inicio = ({ data }) => {
             final: pages[1]
         })
     }
-
-    console.log(status)
 
     return (
         <BaseTemplate mostViewed={data}>
@@ -120,6 +121,7 @@ export const Inicio = ({ data }) => {
                             }}>
                             <span className="page-link">3</span>
                         </li>
+                       
 
                     </ul>
                 </nav>

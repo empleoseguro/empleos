@@ -11,6 +11,7 @@ const CardNoticias = ({ item }) => {
 
     const navigate = useNavigate()
 
+
     const handleOnClick = () => {
         navigate(`/empleos/post/${item?.id}`)
     }

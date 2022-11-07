@@ -7,7 +7,8 @@ export const info = {
         },
         {
             imagen: 'https://i.ibb.co/gy2xGJN/eslogan2.jpg',
-            title: "La tragedia no es no alcanzar tus objetivos, la tragedia es no tener objetivos que alcanzar."
+            title: "La tragedia no es no alcanzar tus objetivos, la tragedia es no tener objetivos que alcanzar.",
+            autor: "pressfoto"
         },
         {
             imagen: 'https://i.ibb.co/bzFbLW6/eslogan3.webp',

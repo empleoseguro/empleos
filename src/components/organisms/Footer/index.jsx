@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='fs-6 text-center border-top border-secondary  text-light px-1'>© 2022, www.empleoseguro.info</div>
+            <div className='fs-6 text-center border-top border-secondary  text-light px-1'>© 2022, www.empleoseguro.info. Desarrollado por <a className='text-danger' href="https://www.instagram.com/adprosoft/" target="_blank">Adprosoft.</a></div>
         </div>
     )
 }
