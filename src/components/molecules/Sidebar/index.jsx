@@ -12,7 +12,7 @@ const Sidebar = ({ mostViewed }) => {
                     {
                         mostViewed?.slice(0, 7).map((item, key) => (
                             <li className="list-group-item" key={key}>
-                                <a className='text-list' href={item?.id}>
+                                <a className='text-list' href={`/empleos/post/${item?.id}`}>
                                     {item?.attributes['title']}
                                 </a>
                             </li>
