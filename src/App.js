@@ -10,6 +10,7 @@ import { useState } from 'react';
 import Formulario from './components/molecules/Formulario';
 import About from './components/Pages/About';
 import { useGetPosts, useUser } from './hooks/useGetPosts';
+import AlertPolitics from './components/molecules/AlertPolitics';
 
 
 function App() {
@@ -31,6 +32,14 @@ function App() {
         <Route path="empleos/about/:section" element={<About data={data} />} />
       </Routes>
       <Footer />
+
+    {
+      localStorage.getItem('mymodal') ?  <AlertPolitics/> :  null
+    }
+   
+   {
+    console.log(localStorage.getItem('mymodal'))
+   }
 
     </div>
   );

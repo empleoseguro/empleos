@@ -19,7 +19,6 @@ const Sidebar = ({ mostViewed }) => {
                         ))
                     }
                 </ul>
-
             </div>
         </div>
     )

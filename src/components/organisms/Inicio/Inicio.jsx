@@ -3,6 +3,7 @@ import CardNoticias from '../../molecules/CardNoticias'
 import CardRecomendaciones from '../../molecules/CardRecomendaciones'
 import Portada from '../../molecules/Portada/Portada'
 import BaseTemplate from '../../templates/BaseTemplate'
+import AlertPolitics from '../../molecules/AlertPolitics'
 import './inicio.css'
 
 export const Inicio = ({ data }) => {
@@ -126,6 +127,7 @@ export const Inicio = ({ data }) => {
                     </ul>
                 </nav>
             </div>
+    
         </BaseTemplate >
     )
 }
