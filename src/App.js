@@ -24,12 +24,12 @@ function App() {
 
       <NavBar />
       <Routes>
-        <Route path="/empleos" element={<Inicio data={data} />}>
+        <Route path="/" element={<Inicio data={data} />}>
 
         </Route>
-        <Route path='empleos/post/:postId' element={<SinglePost data={data} />} />
-        <Route path="empleos/formulario" element={<Formulario data={data} />} />
-        <Route path="empleos/about/:section" element={<About data={data} />} />
+        <Route path='/post/:postId' element={<SinglePost data={data} />} />
+        <Route path="/formulario" element={<Formulario data={data} />} />
+        <Route path="/about/:section" element={<About data={data} />} />
       </Routes>
       <Footer />
 

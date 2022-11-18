@@ -1,6 +1,5 @@
 {
   "name": "empleoseguro",
- "homepage": "https://effulgent-otter-72f4f0.netlify.app/empleos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
