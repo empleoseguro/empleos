@@ -13,7 +13,7 @@ const CardNoticias = ({ item }) => {
 
 
     const handleOnClick = () => {
-        navigate(`/empleos/post/${item?.id}`)
+        navigate(`/post/${item?.id}`)
     }
 
     return (

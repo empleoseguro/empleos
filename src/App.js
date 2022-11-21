@@ -21,11 +21,9 @@ function App() {
 
   return (
     <div className="App">
-
       <NavBar />
       <Routes>
         <Route path="/" element={<Inicio data={data} />}>
-
         </Route>
         <Route path='/post/:postId' element={<SinglePost data={data} />} />
         <Route path="/formulario" element={<Formulario data={data} />} />

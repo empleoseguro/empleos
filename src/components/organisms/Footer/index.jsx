@@ -26,11 +26,11 @@ const Footer = () => {
                     </div>
                     <div className='col-12 col-md-4'>
                         <div className='row gy-3 row-cols-2'>
-                            <a href={section ? validation(section): '/empleos/about/politics'} style={{ fontSize: '0.8rem' }} className=' text-light'>Política de privacidad</a>
-                            <a href={section ? validation(section): '/empleos/about/cookies'} style={{ fontSize: '0.8rem' }} className=' text-light'>Política de cookies</a>
-                            <a href={section ? validation(section): '/empleos/about/conditions'} style={{ fontSize: '0.8rem' }} className=' text-light'>Condiciones de uso</a>
-                            <a href={section ? validation(section): '/empleos/about/aboutus'} style={{ fontSize: '0.8rem' }} className=' text-light'>¿Quiénes somos?</a>
-                            <a href={section ? validation(section): '/empleos/about/contact'} style={{ fontSize: '0.8rem' }} className=' text-light'>Contacto</a>
+                            <a href={section ? validation(section): '/about/politics'} style={{ fontSize: '0.8rem' }} className=' text-light'>Política de privacidad</a>
+                            <a href={section ? validation(section): '/about/cookies'} style={{ fontSize: '0.8rem' }} className=' text-light'>Política de cookies</a>
+                            <a href={section ? validation(section): '/about/conditions'} style={{ fontSize: '0.8rem' }} className=' text-light'>Condiciones de uso</a>
+                            <a href={section ? validation(section): '/about/aboutus'} style={{ fontSize: '0.8rem' }} className=' text-light'>¿Quiénes somos?</a>
+                            <a href={section ? validation(section): '/about/contact'} style={{ fontSize: '0.8rem' }} className=' text-light'>Contacto</a>
                         </div>
                     </div>
 

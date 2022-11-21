@@ -16,7 +16,7 @@ const CardRecomendaciones = ({ item }) => {
     const navigate = useNavigate()
 
     const handleOnClick = () => {
-        navigate(`/empleos/post/${item.id}`)
+        navigate(`/post/${item.id}`)
     }
 
     useEffect(() => {
