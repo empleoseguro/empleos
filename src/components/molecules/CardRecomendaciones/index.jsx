@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react'
 import './card.css'
 import { useNavigate } from 'react-router-dom'
-import twitter from '../../../images/twitter.svg'
-import facebook from '../../../images/facebook.svg'
-import instagram from '../../../images/instagram.svg'
-import abrir from '../../../images/abrir.svg'
 import moment from 'moment'
 import { readingTime } from '../../../utils/functions'
 import TitleCard from '../../atoms/TitleCard'
 import DescriptionCard from '../../atoms/DescriptionCard'
-
 
 const CardRecomendaciones = ({ item }) => {
 
@@ -21,7 +16,7 @@ const CardRecomendaciones = ({ item }) => {
 
     useEffect(() => {
         readingTime(item['attributes']?.title + item['attributes']?.description)
-    }, [])
+    }, [item])
 
     return (
         <div className="card w-100 mb-2 user-select-none " onClick={() => handleOnClick()}>

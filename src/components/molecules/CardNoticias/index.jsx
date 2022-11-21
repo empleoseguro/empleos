@@ -1,6 +1,5 @@
 import React from 'react'
 import './cardnoticias.css'
-import abrir from '../../../images/abrir.svg'
 import moment from 'moment'
 import { useNavigate } from 'react-router-dom'
 import TitleCard from '../../atoms/TitleCard'
@@ -10,7 +9,6 @@ import { readingTime } from '../../../utils/functions'
 const CardNoticias = ({ item }) => {
 
     const navigate = useNavigate()
-
 
     const handleOnClick = () => {
         navigate(`/post/${item?.id}`)

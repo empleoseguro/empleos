@@ -1,8 +1,5 @@
 import React from 'react'
 import icon from '../../../images/favicon.svg'
-import facebook from '../../../images/facebook.svg'
-import twitter from '../../../images/twitter.svg'
-import instagram from '../../../images/instagram.svg'
 import './footer.css'
 import { ShareButton } from '../../atoms/ShareButton'
 import { useParams } from 'react-router-dom'
@@ -37,7 +34,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='fs-6 text-center border-top border-secondary  text-light px-1'>© 2022, www.empleoseguro.info. Desarrollado por <a className='text-danger' href="https://www.instagram.com/adprosoft/" target="_blank">Adprosoft.</a></div>
+            <div className='fs-6 text-center border-top border-secondary  text-light px-1'>© 2022, www.empleoseguro.info. Desarrollado por <a className='text-danger' href="https://www.instagram.com/adprosoft/" rel="noopener">Adprosoft.</a></div>
         </div>
     )
 }

@@ -3,7 +3,6 @@ import CardNoticias from '../../molecules/CardNoticias'
 import CardRecomendaciones from '../../molecules/CardRecomendaciones'
 import Portada from '../../molecules/Portada/Portada'
 import BaseTemplate from '../../templates/BaseTemplate'
-import AlertPolitics from '../../molecules/AlertPolitics'
 import './inicio.css'
 
 export const Inicio = ({ data }) => {
@@ -29,7 +28,6 @@ export const Inicio = ({ data }) => {
                 pages = [12, 16]
             default:
                 pages = [0, 4]
-                break;
         }
         setStatus({
             init: pages[0],
