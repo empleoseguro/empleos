@@ -33,10 +33,6 @@ function App() {
       localStorage.getItem('mymodal') ?  <AlertPolitics/> :  null
     }
    
-   {
-    console.log(localStorage.getItem('mymodal'))
-   }
-
     </div>
   );
 }
