@@ -40,6 +40,7 @@ const Footer = () => {
 }
 
 const validation = (params) => {
+    //hey mor
     let dir
     if (params === `empleos/about/${params}`) {
         dir = '#'
