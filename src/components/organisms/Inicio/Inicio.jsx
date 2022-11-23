@@ -52,7 +52,6 @@ export const Inicio = ({ data }) => {
                 break;
             default:
                 pages = [0, 2]
-                break;
         }
         setStatusNoti({
             init: pages[0],
