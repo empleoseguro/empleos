@@ -44,9 +44,9 @@ function App() {
       </Routes>
       <Footer />
 
-    {/* {
+    {
       true ?  <AlertPolitics/> :  null
-    } */}
+    }
    
     </div>
   );
