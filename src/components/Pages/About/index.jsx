@@ -30,7 +30,7 @@ const About = ({ data }) => {
                         <nav>
                             <ul className="nav flex-column">
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('politics')}>Condiciones de uso</a>
+                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('politics')}>Politícas de privacidad</a>
                                 </li>
                                 <li className="nav-item border-bottom">
                                     <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('conditions')}>Condiciones de uso</a>
