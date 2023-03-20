@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams,Link } from 'react-router-dom'
 import BaseTemplate from '../../templates/BaseTemplate'
 import './about.css'
 
@@ -27,6 +27,7 @@ const About = ({ data }) => {
             <div className='container  p-0'>
                 <div className='d-flex flex-column flex-lg-row bg-light'>
                     <div className='border-end w-auto'>
+                        <nav>
                         <ul className="nav flex-column">
                             <li className="nav-item border-bottom">
                                 <Link className="nav-link fs-6 text-dark active" to="/about/politics">Política de privacidad</Link>
@@ -45,6 +46,7 @@ const About = ({ data }) => {
                                 <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
                             </li>
                         </ul>
+                        </nav>
                     </div>
                     <div className='container w-100 p-2'>
                         {
