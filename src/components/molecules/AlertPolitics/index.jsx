@@ -14,8 +14,13 @@ const AlertPolitics = () => {
 const CookiesPrivacy = () => {
     const [statusAlert, setstatusAlert] = useState('show')
 
+
+
     const aceptCookies = () => {
+        console.log(window.dataLayer)
         localStorage.setItem('cookies-acept', true)
+        window.dataLayer.push({ 'event': 'acept' })
+        setstatusAlert('fade')
     }
 
     return (
