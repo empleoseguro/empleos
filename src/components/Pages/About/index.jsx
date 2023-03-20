@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import BaseTemplate from '../../templates/BaseTemplate'
 import './about.css'
 
@@ -9,8 +9,10 @@ const About = ({ data }) => {
 
     const [mode, setMode] = useState('politics')
 
+    const navigate = useNavigate()
+
     const handleOnClick = (param) => {
-        setMode(param)
+        navigate(`/about/${param}`)
     }
 
     useEffect(() => {
@@ -41,7 +43,6 @@ const About = ({ data }) => {
                             <li className="nav-item border-bottom">
                                 <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
                             </li>
-
                         </ul>
                     </div>
                     <div className='container w-100 p-2'>
@@ -130,6 +131,48 @@ const Politics = () => {
                                 privacidad se han generado en <a href="https://politicadeprivacidadplantilla.com/" target="_blank">
                 politicadeprivacidadplantilla.com</a>.<br />
         </p>
+        <p>
+            Política de privacidad de empleoseguro.tech
+            Esta Aplicación recoge algunos Datos Personales de sus Usuarios.</p>
+
+        <p> Datos Personales tratados para las siguientes finalidades y utilizando los siguientes servicios:
+            Contactar con el Usuario
+            Formulario de contacto
+            Datos Personales: apellido(s); país; razón social; área de actividad
+        </p>
+        <p>
+            Gestión de Etiquetas
+            Google Tag Manager
+            Datos Personales: Datos de uso
+        </p>
+        <p>
+            Publicidad
+            Publicidad directa
+            Datos Personales: Datos de uso; Identificador único universal (UUID); identificadores únicos de dispositivo para publicidad (ID de publicidad de Google o IDFA, por ejemplo); información del dispositivo; Rastreadores
+        </p>
+        <p>
+            Visualizar contenidos de plataformas externas
+            Google Fonts
+            Datos Personales: Datos de uso; Rastreadores
+        </p>
+        <p>
+            Información sobre la inhabilitación de la publicidad basada en intereses
+            Además de las funcionalidades de inhabilitación ofrecidas por cualquiera de los servicios enumerados en el presente documento, los Usuarios podrán seguir las instrucciones facilitadas por YourOnlineChoices (UE), la Network Advertising Initiative (EE. UU.) y la Digital Advertising Alliance (EE. UU.), DAAC (Canadá), DDAI (Japón) u otros servicios similares. Tales iniciativas permiten a los Usuarios seleccionar sus preferencias de seguimiento para la mayoría de las herramientas de publicidad. El Titular, por tanto, recomienda que los Usuarios utilicen estos recursos además de la información proporcionada en el presente documento.
+        </p>
+        <p>
+            La Digital Advertising Alliance ofrece una aplicación denominada AppChoices que ayuda a los Usuarios a controlar la publicidad basada en intereses en aplicaciones móviles.
+        </p>
+        <p>
+            Los Usuarios también podrán inhabilitar determinadas funcionalidades publicitarias mediante las correspondientes opciones de configuración de los dispositivos, como las opciones de configuración de publicidad del dispositivo para teléfonos móviles o la configuración de publicidad en general.
+        </p>
+        <p>
+            Datos de contacto
+            Titular y Responsable del tratamiento de los Datos
+            Adprosoft, La Castellana 1060, Caracas, Venezuela.
+        </p>
+        <p>
+            Correo electrónico de contacto del Titular: kevindosmartinfenixzone@gmail.com
+        </p>
     </div>
     )
 }
@@ -139,6 +182,31 @@ const Conditions = () => {
         <div className='mt-3' >
             <h1><strong>Condiciones de uso</strong></h1>
             <p>Empleo Seguro, como su nombre lo indica es un sitio web creado a fin de tener un empleo seguro para usted mismo y para su empleador, nuestra función principal orientar, motivar y enseñar a nuestro público en el ámbito laboral, disponemos de información que creemos que será útil para vosotros y consecuente para tu empleador, dicha información recogida de múltiples sitios web, libros reconocidos y basándonos en experiencia propia, como podremos ayudaros, inclusivamente os mantendremos informados sobre lo que pasa en el mundo relacionado con el trabajo, además disponemos de un formulario sencillo para llevaros a Google y buscar empleadores en tu zona. Hacemos énfasis, Empleo Seguro no ofrece un empleo a disposición ni mucho menos garantiza que vosotros encontréis dicho requerimiento propio, solo es una página informativa.
+            </p>
+            <p>Estados Unidos</p>
+            <p>Los siguientes son términos y condiciones específicas para los usuarios en los Estados Unidos de nuestros sitios web y aplicaciones móviles:
+
+                1. Propiedad y uso del contenido: Todos los contenidos, información, imágenes, videos, gráficos, textos y otros materiales exhibidos están protegidos por las leyes de marcas registradas y derechos de autor. Estos materiales solo pueden ser utilizados para uso personal y no comercial de los usuarios. El uso comercial está prohibido sin previa autorización escrita de nuestra empresa.
+
+                2. Información de cuenta: Cada usuario es responsable de mantener la privacidad de su cuenta y cualquier actividad relacionada con ella. Cualquier uso no autorizado de una cuenta debe ser reportado inmediatamente. No nos hacemos responsables de las consecuencias de un uso no autorizado de una cuenta.
+
+                3. Propiedad intelectual: Todos los derechos de propiedad intelectual pertenecen a nuestra empresa. Los usuarios no tienen derecho a reproducir, modificar, distribuir, vender o usar el contenido con fines comerciales. Cualquier uso no autorizado de propiedad intelectual será sancionado legalmente.
+
+                4. Política de privacidad: Nuestra empresa tiene una política de privacidad que protege la información personal del usuario. Los usuarios deben leer y entender esta política antes de utilizar el sitio o la aplicación.
+
+                5. Responsabilidad limitada: No somos responsables de cualquier daño o perjuicio directo o indirecto que puedan causar los contenidos del sitio, incluyendo virus, pérdida de datos, interrupciones de servicio, retrasos en la transmisión de información, errores u omisiones o cualquier otro tipo de pérdida directa o indirecta.
+
+                6. Jurisdicción: Estos términos están sujetos a las leyes de los Estados Unidos. Si surge algún conflicto legal entre el usuario y nuestra empresa, se debe resolver de acuerdo con las leyes de los Estados Unidos y la jurisdicción de los tribunales federales y estatales de los Estados Unidos.
+
+                7. Modificaciones: Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento y sin previo aviso. Los usuarios deben verificar periódicamente cualquier cambio en los términos y condiciones.
+
+                8. Cesión: No se permite la cesión o transferencia de los derechos otorgados por estos términos y condiciones ni del sitio web ni de la aplicación.
+
+                9. Rescisión: Nos reservamos el derecho de rescindir cualquier cuenta en cualquier momento y sin previo aviso si consideramos que el usuario ha violado cualquiera de los términos y condiciones de uso del sitio. También nos reservamos el derecho de eliminar la información provista por el usuario en la plataforma sin previo aviso.
+
+                10. Soporte al cliente: Para cualquier ayuda o soporte relacionado con el sitio o la aplicación, los usuarios pueden contactarnos por correo electrónico o por otras opciones de contacto que se proporcionen en el sitio web.
+
+                Al utilizar nuestro sitio web o nuestra aplicación, el usuario acepta estos términos y condiciones. Si no aceptas estas cláusulas, no podrás usar nuestro sitio web o nuestra aplicación.
             </p>
         </div>
     )
