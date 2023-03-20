@@ -39,7 +39,7 @@ const CookiesPrivacy = () => {
 
 
 const DetailsCookiesPrivacy = ({ mycookies, setCookies }) => {
-
+    //asdas
     return (
         <div
             className="modal"
