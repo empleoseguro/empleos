@@ -18,7 +18,7 @@ export const NavBar = () => {
                     <div className="navbar-nav ms-auto fw-bold">
                         <Link to="/" className='"nav-item nav-link'>INICIO</Link>
                         <Link to="/formulario" className='"nav-item nav-link'>FORMULARIO</Link>
-                        <Link to="/about/politics" className='"nav-item nav-link'>AYUDA</Link>
+                        <Link to="/about/politics" className='"nav-item nav-link'>PRIVACIDAD</Link>
                     </div>
                 </div>
             </div>
