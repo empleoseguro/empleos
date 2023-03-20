@@ -4,7 +4,7 @@ import { NavBar } from './components/organisms/NavBar/NavBar';
 import { Inicio } from './components/organisms/Inicio/Inicio';
 import SinglePost from './components/molecules/SinglePost';
 import Footer from './components/organisms/Footer';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Formulario from './components/molecules/Formulario';
 import About from './components/Pages/About';
 import { useGetPosts } from './hooks/useGetPosts';
@@ -13,7 +13,22 @@ import AlertPolitics from './components/molecules/AlertPolitics';
 
 function App() {
 
+  const [local, setlocal] = useState(false)
+
   const data = useGetPosts()
+
+  useEffect(() => {
+    
+    if (localStorage.getItem('mymodal') === null) {
+      console.log('no existe')
+      localStorage.setItem('mymodal', true)
+      setlocal(true)
+    }else {
+      console.log('existe')
+      setlocal(false)
+    }
+  }, [])
+  
 
 
 
@@ -30,7 +45,7 @@ function App() {
       <Footer />
 
     {
-      localStorage.getItem('mymodal') ?  <AlertPolitics/> :  null
+      true ?  <AlertPolitics/> :  null
     }
    
     </div>
