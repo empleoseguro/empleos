@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams,Link } from 'react-router-dom'
+import { useNavigate, useParams, Link } from 'react-router-dom'
 import BaseTemplate from '../../templates/BaseTemplate'
 import './about.css'
 
@@ -12,7 +12,7 @@ const About = ({ data }) => {
     const navigate = useNavigate()
 
     const handleOnClick = (param) => {
-        navigate(`/about/${param}`)
+        setMode(param)
     }
 
     useEffect(() => {
@@ -28,24 +28,24 @@ const About = ({ data }) => {
                 <div className='d-flex flex-column flex-lg-row bg-light'>
                     <div className='border-end w-auto'>
                         <nav>
-                        <ul className="nav flex-column">
-                            <li className="nav-item border-bottom">
-                                <Link className="nav-link fs-6 text-dark active" to="/about/politics">Política de privacidad</Link>
-                            </li>
-                            <li className="nav-item border-bottom">
-                                <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('conditions')}>Condiciones de uso</a>
-                            </li>
-                            <li className="nav-item border-bottom">
-                                <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('contact')}>Contacto</a>
-                            </li>
-                            <li className="nav-item border-bottom">
-                                <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('cookies')}>Política de cookies</a>
-                            </li>
-                            <li className="nav-item border-bottom">
+                            <ul className="nav flex-column">
+                                <li className="nav-item border-bottom">
+                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('politics')}>Condiciones de uso</a>
+                                </li>
+                                <li className="nav-item border-bottom">
+                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('conditions')}>Condiciones de uso</a>
+                                </li>
+                                <li className="nav-item border-bottom">
+                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('contact')}>Contacto</a>
+                                </li>
+                                <li className="nav-item border-bottom">
+                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('cookies')}>Política de cookies</a>
+                                </li>
+                                <li className="nav-item border-bottom">
 
-                                <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
-                            </li>
-                        </ul>
+                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
                     <div className='container w-100 p-2'>
@@ -226,7 +226,7 @@ const AboutUs = () => {
                 Y mejor aún, le ayude a crecer.
             </p>
             <p>
-                Ubicación: Colombia, Norte de Santander, Villa del Rosario, Barrio San Martín.
+                Ubicación: Venezuela, Caracas, Distrito Capital, La Castellana 1060
             </p>
         </div>
     )
