@@ -29,7 +29,7 @@ const About = ({ data }) => {
                     <div className='border-end w-auto'>
                         <ul className="nav flex-column">
                             <li className="nav-item border-bottom">
-                                <a className="nav-link fs-6 text-dark active" aria-current="page" onClick={() => handleOnClick('politics')} href="#">Política de privacidad</a>
+                                <Link className="nav-link fs-6 text-dark active" to="/about/politics">Política de privacidad</Link>
                             </li>
                             <li className="nav-item border-bottom">
                                 <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('conditions')}>Condiciones de uso</a>
@@ -41,6 +41,7 @@ const About = ({ data }) => {
                                 <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('cookies')}>Política de cookies</a>
                             </li>
                             <li className="nav-item border-bottom">
+
                                 <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
                             </li>
                         </ul>
@@ -53,7 +54,7 @@ const About = ({ data }) => {
 
                 </div>
             </div>
-        </BaseTemplate>
+        </BaseTemplate >
     )
 }
 
