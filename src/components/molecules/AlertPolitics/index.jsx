@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
+import Cookies from 'universal-cookie'
 import './alertpolitics.css'
+import { Link } from 'react-router-dom'
 
 
 
@@ -12,42 +14,70 @@ const AlertPolitics = () => {
 }
 
 const CookiesPrivacy = () => {
-    const [statusAlert, setstatusAlert] = useState('show')
+    const [statusAlert, setstatusAlert] = useState(false)
+    const [statusBanner, setstatusBanner] = useState('show')
 
+    const cookies = new Cookies()
 
+    console.log(cookies.getAll({ path: '/' }))
 
     const aceptCookies = () => {
-        console.log(window.dataLayer)
         localStorage.setItem('cookies-acept', true)
-        window.dataLayer.push({ 'event': 'acept' })
-        setstatusAlert('fade')
+        cookies.set('infolinks_com', 'cookies', { path: '/' });
+
+        setstatusBanner('fade')
+    }
+
+    const denegateCookies = () => {
+        cookies.remove('infolinks.com', { path: '/' })
+        setstatusBanner('fade')
+        return
     }
 
     return (
         !localStorage.getItem('cookies-acept') ?
-            <div className={`d-flex justify-content-center align-items-center alert alert-warning ${statusAlert} m-0 border-0 rounded-0 text-center position-fixed bottom-0 w-100 bg-dark text-light cookiesprivacy`}>
-                <div>
-                    Utilizamos cookies para ofrecerte la mejor experiencia en nuestra web.
-                    <br />
-                    Puedes aprender más sobre qué cookies utilizamos o desactivarlas en los <a href='#'>ajustes</a>.
-                </div>
-                <button className='btn btn-primary m-2' onClick={aceptCookies}>Aceptar</button>
-            </div> : null
+            <>
+                <Modal.Dialog className="modal d-block fixed-top rounded" tabindex="-1">
+
+
+                    <Modal.Body className='bg-dark text-light p-4 rounded'>
+                        Al hacer clic en "Aceptar", usted reconoce que ha leído y entendido nuestras <Link className='a-banner' to='about/politics'>políticas de privacidad</Link>.
+                        <br />
+                        así como también consiente el uso de <Link className='a-banner' to='about/cookies'>cookies</Link> de terceros para mejorar su navegación en nuestro sitio. 
+                        {/* <a href='#' onClick={() => setstatusAlert(true)} className='a-banner'>ajustes</a>. */}
+                        <div className='text-end mt-3'>
+                            <Button onClick={aceptCookies}>Aceptar</Button>
+                            <Button className='btn btn-secondary m-2' onClick={denegateCookies}>Rechazar</Button>
+                        </div>
+
+                    </Modal.Body>
+
+
+
+
+
+                </Modal.Dialog>
+                <DetailsCookiesPrivacy show={statusAlert} setShow={setstatusAlert} aceptCookies={aceptCookies} denegateCookies={denegateCookies} />
+            </>
+            : null
     )
 }
 
 
 
-const DetailsCookiesPrivacy = ({ mycookies, setCookies }) => {
+const DetailsCookiesPrivacy = ({ show, setShow, aceptCookies, denegateCookies, cookies }) => {
+    let mycookies
+    let setmycookies
+    let setCookies
     //asdas
     return (
         <div
-            className="modal"
-            style={{ display: 'block', position: 'fixed' }}
+            className={`modal ${show ? 'd-block' : 'd-none'}`}
         >
             <Modal.Dialog >
-                <Modal.Header closeButton className='bg-dark text-light'>
+                <Modal.Header className='bg-dark text-light'>
                     <Modal.Title>Resumen de privacidad</Modal.Title>
+                    <div className='fs-5 fw-bold text-danger me-2 ' style={{ cursor: 'pointer' }} onClick={() => setShow(false)}>X</div>
                 </Modal.Header>
 
                 <Modal.Body className='bg-dark text-light'>
@@ -55,8 +85,10 @@ const DetailsCookiesPrivacy = ({ mycookies, setCookies }) => {
 
                     <p>
                         Esta web utiliza Google Analytics para recopilar información anónima tal como el número de visitantes del sitio, o las páginas más populares.
-                        Dejar esta cookie activa nos permite mejorar nuestra web.
+                        Dejar esta cookie activa nos permite mejorar nuestra web. Ver
+                        <Link to="about/politics" className='text-primary'> Politicas de privacidad</Link>.
                     </p>
+
 
 
                     <div class="form-check form-switch">

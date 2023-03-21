@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams, Link } from 'react-router-dom'
+import Cookies from 'universal-cookie'
 import BaseTemplate from '../../templates/BaseTemplate'
 import './about.css'
 
@@ -10,6 +11,8 @@ const About = ({ data }) => {
     const [mode, setMode] = useState('politics')
 
     const navigate = useNavigate()
+
+
 
     const handleOnClick = (param) => {
         setMode(param)
@@ -66,7 +69,7 @@ const evaluate = (type) => {
     let component
     switch (type) {
         case 'politics':
-            component = <Politics />
+            component = <AdsPolitics />
             break;
         case 'conditions':
             component = <Conditions />
@@ -78,7 +81,7 @@ const evaluate = (type) => {
             component = <Contact />
             break;
         case 'cookies':
-            component = <Cookies />
+            component = <Cookiess />
             break;
         default:
             component = <Politics />
@@ -86,6 +89,74 @@ const evaluate = (type) => {
     }
 
     return component
+}
+
+const AdsPolitics = () => {
+    return (
+        <>
+            <div className="">
+                <h4>
+                    <strong>Política de privacidad de anuncios.</strong>
+                </h4>
+                <small>13-06-2023</small>
+            </div>
+            <p>Esta Política de privacidad describe cómo se recopilan, utilizan y comparten tus datos personales al utilizar este sitio web.Al utilizar este sitio web, aceptas esta Política de privacidad.
+            </p>
+            <h4>Recopilación de datos</h4>
+            <p>Este sitio web puede recopilar ciertos datos personales de los usuarios con fines de publicidad basada en intereses. Estos datos pueden incluir, pero no se limitan a, información sobre tus intereses, comportamiento de navegación y ubicación geográfica.
+            </p>
+            <p>Este sitio web utiliza cookies y otras tecnologías similares para recopilar estos datos.Al utilizar este sitio web, aceptas el uso de estas tecnologías.
+            </p>
+            <h4>Mecanismo de exclusión voluntaria
+            </h4>
+            <p>Este sitio web respeta tus preferencias de privacidad. Si no deseas que se recopile información sobre tus intereses para publicidad basada en intereses, puedes optar por excluirte voluntariamente de esta práctica. Para hacerlo, sigue el siguiente hipervínculo: <a href="https://optout.networkadvertising.org/?c=1#!%2F">Excluirse de la publicidad basada en intereses</a>.
+            </p>
+            <h4>Transferencia de datos
+            </h4>
+            <p>Este sitio web puede compartir los datos personales recopilados con terceros para fines de publicidad basada en intereses.Estos terceros pueden incluir, pero no se limitan a, redes publicitarias, anunciantes y proveedores de servicios de análisis.
+            </p>
+            <p>Estos terceros pueden utilizar estos datos para mostrar anuncios relevantes y personalizados en este sitio web y en otros sitios web que visitas.
+            </p>
+            <h4>Seguridad de datos
+            </h4>
+            <p>Este sitio web toma medidas razonables para proteger tus datos personales de accesos no autorizados, divulgación y uso indebido.Sin embargo, no se puede garantizar la seguridad absoluta de los datos transmitidos a través de Internet.
+            </p>
+            <h4>Cambios a esta Política de privacidad
+            </h4>
+            <p>Esta Política de privacidad puede ser actualizada de vez en cuando.Si realizamos cambios significativos en esta Política de privacidad, publicaremos un aviso en este sitio web y actualizaremos la fecha de "última actualización" al principio de esta Política de privacidad.
+            </p>
+            <p> Datos Personales tratados para las siguientes finalidades y utilizando los siguientes servicios:
+                Contactar con el Usuario
+                Formulario de contacto
+                Datos Personales: apellido(s); país; razón social; área de actividad
+            </p>
+            <p>
+                Gestión de Etiquetas
+                Google Tag Manager
+                Datos Personales: Datos de uso
+            </p>
+            <p>
+                Publicidad
+                Publicidad directa
+                Datos Personales: Datos de uso; Identificador único universal (UUID); identificadores únicos de dispositivo para publicidad (ID de publicidad de Google o IDFA, por ejemplo); información del dispositivo; Rastreadores
+            </p>
+            <p>
+                Visualizar contenidos de plataformas externas
+                Google Fonts
+                Datos Personales: Datos de uso; Rastreadores
+            </p>
+            <p>
+                Información sobre la inhabilitación de la publicidad basada en intereses
+                Además de las funcionalidades de inhabilitación ofrecidas por cualquiera de los servicios enumerados en el presente documento, los Usuarios podrán seguir las instrucciones facilitadas por YourOnlineChoices (UE), la Network Advertising Initiative (EE. UU.) y la Digital Advertising Alliance (EE. UU.), DAAC (Canadá), DDAI (Japón) u otros servicios similares. Tales iniciativas permiten a los Usuarios seleccionar sus preferencias de seguimiento para la mayoría de las herramientas de publicidad. El Titular, por tanto, recomienda que los Usuarios utilicen estos recursos además de la información proporcionada en el presente documento.
+            </p>
+            <p>
+                La Digital Advertising Alliance ofrece una aplicación denominada AppChoices que ayuda a los Usuarios a controlar la publicidad basada en intereses en aplicaciones móviles.
+            </p>
+            <p>
+                Los Usuarios también podrán inhabilitar determinadas funcionalidades publicitarias mediante las correspondientes opciones de configuración de los dispositivos, como las opciones de configuración de publicidad del dispositivo para teléfonos móviles o la configuración de publicidad en general.
+            </p>
+        </>
+    )
 }
 
 const Politics = () => {
@@ -232,7 +303,14 @@ const AboutUs = () => {
     )
 }
 
-const Cookies = () => {
+const Cookiess = () => {
+    const cookies = new Cookies()
+
+    const deleteCookies = () => {
+        localStorage.removeItem('cookies-acept')
+        cookies.remove('infolinks_com', {path: '/'})
+        return
+    }
     return (
         <div className='mt-3' >
             <h1><strong>Cookies</strong></h1>
@@ -251,6 +329,7 @@ const Cookies = () => {
                 cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede
                 cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible
                 que no pueda utilizar algunos de nuestros servicios.</p>
+            <a href='#' onClick={deleteCookies}>Eliminar Cookies</a>
         </div>
     )
 }
@@ -264,7 +343,7 @@ const Contact = () => {
                 recibir consejos o críticas sobre nuestro sitio, sugerencias, errores, entre otras cosas.
             </p>
             <ul>
-                <li> <p><strong>Correo</strong>: <a href='#'>galbaneduardoenrique11@gmail.com</a></p></li>
+                <li> <p><strong>Correo</strong>: <a href='#'>kevindosmartinfenixzone@gmail.com</a></p></li>
                 <li> <p><strong>WhatsApp</strong>: <a href='#'>+57 311 2313082</a></p></li>
                 <li> <p><strong>Instagram</strong>: <a href='https://www.instagram.com/empleoseguroes/' target="_blank">@empleoseguroes</a></p></li>
                 <li> <p><strong>Facebook</strong>: <a href='https://www.facebook.com/vidasinmaduro/' target="_blank">@empleosegurosas</a></p></li>

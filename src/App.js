@@ -17,18 +17,20 @@ function App() {
 
   const data = useGetPosts()
 
+
+
   useEffect(() => {
-    
+   
     if (localStorage.getItem('mymodal') === null) {
       console.log('no existe')
       localStorage.setItem('mymodal', true)
       setlocal(true)
-    }else {
+    } else {
       console.log('existe')
       setlocal(false)
     }
   }, [])
-  
+
 
 
 
@@ -44,10 +46,10 @@ function App() {
       </Routes>
       <Footer />
 
-    {
-      true ?  <AlertPolitics/> :  null
-    }
-   
+      {
+        true ? <AlertPolitics /> : null
+      }
+
     </div>
   );
 }
