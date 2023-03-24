@@ -10,8 +10,45 @@
     background-color: rgba(61, 61, 61, 0.399);
 }
 
+.container-banner {
+    max-height: 93vh;
+}
+
+.modal-banner {
+    background-color: rgba(0, 0, 0, 0.295);
+    height: 100%;
+}
+
 .a-banner {
     color: blue;
+}
+
+.body-banner {
+    scroll-behavior: smooth;
+    max-height: 67vh;
+    overflow-y: scroll;
+}
+
+.header-banner {
+    background-color: #8e7ef6;
+}
+.text-banner {
+    background-color: #8e7ef6;
+}
+
+.button-corp {
+    background-color: #8e7ef6;
+}
+
+.buttons-all {
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+   
 }
 
 .mymodal {
