@@ -5,6 +5,7 @@ import './alertpolitics.css'
 import { Link } from 'react-router-dom'
 import logo from '../../organisms/NavBar/favicon.svg'
 import Cookies from 'js-cookie'
+import useThirdPartyCookieCheck from '../../../hooks/useThirdPartyCookieCheck'
 
 
 const AlertPolitics = () => {
@@ -19,6 +20,8 @@ const CookiesPrivacy = () => {
     const [statusBanner, setstatusBanner] = useState('show')
     const [visibilityBanner, setvisibilityBanner] = useState(false)
 
+    const hook = useThirdPartyCookieCheck()
+
     useEffect(() => {
         if (!localStorage.getItem('cookies-acept')) {
             setvisibilityBanner(true)
@@ -32,6 +35,7 @@ const CookiesPrivacy = () => {
         aceptCookiesTerceros()
         localStorage.setItem('cookies-acept', true)
         window.dataLayer.push({ 'event': 'acept-analytics' })
+        console.log('is: ',hook)
         setvisibilityBanner(false)
         setstatusBanner('fade')
     }
@@ -93,24 +97,12 @@ const CookiesPrivacy = () => {
 
 
 
-const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, cookies, setmodalCookiesConfig }) => {
-    const { infolinks_com } = cookies
-
-    const [infolinks, setinfolinks] = useState(null)
-
-    useEffect(() => {
-        setinfolinks(infolinks_com)
-    }, [cookies])
-
-
+const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesConfig }) => {
 
     const onChangeCookies = (e) => {
         console.log(e.target.value)
     }
 
-    let setmycookies
-    let setCookies
-    //asdas
     return (
         <div className='modal-banner  fixed-top p-1 w-100' tabIndex="-1">
             <div className='px-lg-4 mx-lg-4'>
