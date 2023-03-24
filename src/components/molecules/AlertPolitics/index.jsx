@@ -35,7 +35,7 @@ const CookiesPrivacy = () => {
     const aceptCookies = () => {
         localStorage.setItem('cookies-acept', true)
         cookies.set('infolinks_com', 'cookies', { path: '/' });
-        window.dataLayer.push({ 'event': 'acept' })
+        window.dataLayer.push({ 'event': 'acept-analytics' })
         console.log(window.dataLayer)
         console.log('aceptado')
         setvisibilityBanner(false)
