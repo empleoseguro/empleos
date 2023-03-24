@@ -17,23 +17,6 @@ function App() {
 
   const data = useGetPosts()
 
-
-
-  useEffect(() => {
-   
-    if (localStorage.getItem('mymodal') === null) {
-      console.log('no existe')
-      localStorage.setItem('mymodal', true)
-      setlocal(true)
-    } else {
-      console.log('existe')
-      setlocal(false)
-    }
-  }, [])
-
-
-
-
   return (
     <div className="App">
       <NavBar />

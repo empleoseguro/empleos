@@ -25,7 +25,6 @@ const CookiesPrivacy = () => {
     useEffect(() => {
         if (!localStorage.getItem('cookies-acept')) {
             setvisibilityBanner(true)
-            console.log('si existe cookies acept')
         }
     }, [])
 
@@ -34,17 +33,15 @@ const CookiesPrivacy = () => {
 
     const aceptCookies = () => {
         localStorage.setItem('cookies-acept', true)
-        cookies.set('infolinks_com', 'cookies', { path: '/' });
+        cookies.set('infolinks_com', 'cookies', { path: '/', domain:'infolinks.com' },);
         window.dataLayer.push({ 'event': 'acept-analytics' })
         console.log(window.dataLayer)
-        console.log('aceptado')
         setvisibilityBanner(false)
         setstatusBanner('fade')
     }
 
     const denegateCookies = () => {
         cookies.remove('infolinks.com', { path: '/' })
-        console.log('denagado')
         setstatusBanner('fade')
         setvisibilityBanner(false)
         return
