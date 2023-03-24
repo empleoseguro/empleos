@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams, Link } from 'react-router-dom'
-import Cookies from 'universal-cookie'
 import BaseTemplate from '../../templates/BaseTemplate'
 import './about.css'
 
@@ -304,13 +303,7 @@ const AboutUs = () => {
 }
 
 const Cookiess = () => {
-    const cookies = new Cookies()
 
-    const deleteCookies = () => {
-        localStorage.removeItem('cookies-acept')
-        cookies.remove('infolinks_com', {path: '/'})
-        return
-    }
     return (
         <div className='mt-3' >
             <h1><strong>Cookies</strong></h1>
@@ -329,7 +322,7 @@ const Cookiess = () => {
                 cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede
                 cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible
                 que no pueda utilizar algunos de nuestros servicios.</p>
-            <a href='#' onClick={deleteCookies}>Eliminar Cookies</a>
+            <a href='#' >Eliminar Cookies</a>
         </div>
     )
 }

@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
-import Cookies from 'universal-cookie'
 import './alertpolitics.css'
 import { Link } from 'react-router-dom'
 import logo from '../../organisms/NavBar/favicon.svg'
-
+import Cookies from 'js-cookie'
 
 
 const AlertPolitics = () => {
@@ -20,8 +19,6 @@ const CookiesPrivacy = () => {
     const [statusBanner, setstatusBanner] = useState('show')
     const [visibilityBanner, setvisibilityBanner] = useState(false)
 
-    const cookies = new Cookies()
-
     useEffect(() => {
         if (!localStorage.getItem('cookies-acept')) {
             setvisibilityBanner(true)
@@ -32,16 +29,19 @@ const CookiesPrivacy = () => {
     // console.log(cookies.getAll({ path: '/' }))
 
     const aceptCookies = () => {
+        aceptCookiesTerceros()
         localStorage.setItem('cookies-acept', true)
-        cookies.set('infolinks_com', 'cookies', { path: '/', domain:'infolinks.com' },);
         window.dataLayer.push({ 'event': 'acept-analytics' })
-        console.log(window.dataLayer)
         setvisibilityBanner(false)
         setstatusBanner('fade')
     }
 
+    const aceptCookiesTerceros = () => {
+        console.log('llega a cookies de terceros pa')
+        Cookies.set('INFOLINKS', 'infolinks.com', { path: '/' })
+    }
+
     const denegateCookies = () => {
-        cookies.remove('infolinks.com', { path: '/' })
         setstatusBanner('fade')
         setvisibilityBanner(false)
         return
@@ -83,7 +83,7 @@ const CookiesPrivacy = () => {
                     </div>
                 </div>
                 {
-                    modalCookiesConfig ? <DetailsCookiesPrivacy setmodalCookiesConfig={setmodalCookiesConfig} aceptCookies={aceptCookies} denegateCookies={denegateCookies} cookies={cookies} />
+                    modalCookiesConfig ? <DetailsCookiesPrivacy setmodalCookiesConfig={setmodalCookiesConfig} aceptCookies={aceptCookies} denegateCookies={denegateCookies} />
                         : null
                 }
             </>
