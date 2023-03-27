@@ -2,24 +2,24 @@ export const info = {
     eslogan: [
         {
             status: 'active',
-            imagen: 'https://i.ibb.co/RCxDXZ8/Experts-pana.png',
+            imagen: 'https://i.ibb.co/1Tdb5qN/Experts-pana.webp',
             title: "Potencia tus habilidades para conseguir el trabajo perfecto."
         },
         {
-            imagen: 'https://i.ibb.co/wNKDpYr/Experts-amico.png',
+            imagen: 'https://i.ibb.co/WWNnFnk/Experts-amico.webp',
             title: "Conviértete en el candidato ideal con nuestros consejos.",
             autor: "pressfoto"
         },
         {
-            imagen: 'https://i.ibb.co/KsG1Tss/Profile-data-rafiki.png',
+            imagen: 'https://i.ibb.co/n0CKv48/Profile-data-rafiki.webp',
             title: "Haz que tu currículum destaque entre los demás."
         },
         {
-            imagen: 'https://i.ibb.co/4f8RGZ7/Experts-bro.png',
+            imagen: 'https://i.ibb.co/02MMf4z/Experts-bro.webp',
             title: "¡Deja de buscar, empieza a encontrar!"
         },
         {
-            imagen: 'https://i.ibb.co/pzKgNNf/Freelancer-cuate.png',
+            imagen: 'https://i.ibb.co/cCYmFzC/Freelancer-cuate.webp',
             title: "Si tú sabes lo que vales, ve y consigue lo que mereces."
         },
         // {

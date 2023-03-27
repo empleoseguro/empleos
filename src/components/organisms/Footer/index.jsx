@@ -10,9 +10,9 @@ const Footer = () => {
 
     return (
         <div className='bg-dark mt-5'>
-            <div className='container py-4'>
-                <div className='row gy-3'>
-                    <div className='col-12 col-md-6 d-flex flex-row align-items-center'>
+            <div className='mx-sm-5 d-flex justify-content-around py-4'>
+                <div className='d-flex flex-column flex-sm-row '>
+                    <div className='d-flex flex-row align-items-center w-sm-50'>
                         <div className='me-3'>
                             <img loading='lazy' className='icono' alt='logo de la compania' src={icon} />
                         </div>
@@ -21,13 +21,13 @@ const Footer = () => {
                         <ShareButton type='twitter' redes />
                         <ShareButton type='whatsapp' redes />
                     </div>
-                    <div className='col-12 col-md-4'>
-                        <div className='row gy-3 row-cols-2'>
-                            <Link to="about/politics" style={{ fontSize: '0.8rem' }} className=' text-light'>Política de privacidad</Link>
-                            <Link to="about/cookies" style={{ fontSize: '0.8rem' }} className=' text-light'>Política de cookies</Link>
-                            <Link to="about/conditions" style={{ fontSize: '0.8rem' }} className=' text-light'>Condiciones de uso</Link>
-                            <Link to="about/aboutus" style={{ fontSize: '0.8rem' }} className=' text-light'>¿Quiénes somos?</Link>
-                            <Link to="about/contact" style={{ fontSize: '0.8rem' }} className=' text-light'>Contacto</Link>
+                    <div className='w-sm-50'>
+                        <div className=''>
+                            <Link to="about/politics" style={{ fontSize: '0.8rem' }} className=' text-light fs-6 text-decoration-none'>Política de privacidad</Link>
+                            <Link to="about/cookies" style={{ fontSize: '0.8rem' }} className=' text-light fs-6 text-decoration-none'>Política de cookies</Link>
+                            <Link to="about/conditions" style={{ fontSize: '0.8rem' }} className=' text-light fs-6 text-decoration-none'>Condiciones de uso</Link>
+                            <Link to="about/aboutus" style={{ fontSize: '0.8rem' }} className=' text-light fs-6 text-decoration-none'>¿Quiénes somos?</Link>
+                            <Link to="about/contact" style={{ fontSize: '0.8rem' }} className=' text-light fs-6 text-decoration-none'>Contacto</Link>
                         </div>
                     </div>
 

@@ -2,3 +2,18 @@
     background-color: #8e7ff7;
     color:white
 }
+
+.portada-form {
+    background-color: #8e7ff7;
+}
+
+.portada-text {
+    color: #8e7ff7;
+    text-shadow: 1px 1px 2px black;
+}
+
+.imagen-form {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}

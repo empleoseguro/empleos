@@ -14,5 +14,9 @@ a {
   color: black;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 
 
