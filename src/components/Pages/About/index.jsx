@@ -25,9 +25,20 @@ const About = ({ data }) => {
 
 
     return (
-        <BaseTemplate mostViewed={data}>
-            <div className='container  p-0'>
-                <div className='d-flex flex-column flex-lg-row bg-light'>
+        <div>
+            <div className='portada-form justify-content-around align-items-center d-flex flex-column flex-sm-row px-sm-3 mt-2 bg-dark'>
+                <div className='d-flex flex-column w-50  align-items-center'>
+                    <div className='fs-3 fw-bold text-center portada-text '>Todo lo que necesitas saber sobre nosotros y nuestra comunidad en línea</div>
+                    <div className='d-none d-sm-flex fs-6 text-secondary'>¡Bienvenido a nuestra sección de políticas, cookies, contacto, sobre nosotros y redes sociales! Aquí encontrarás información importante sobre nuestras políticas y prácticas, cómo nos comunicamos contigo, quiénes somos y cómo puedes encontrarnos en las redes sociales. Si tienes alguna pregunta o comentario, no dudes en contactarnos. ¡Gracias por visitarnos!</div>
+                </div>
+                <div className='d-flex flex-column justify-content-center align-items-center w-sm-25'>
+                    <img className='imagen-form' src='https://i.ibb.co/7SHJvWG/Security-On-bro.webp' alt='form image' loading='lazy' />
+                    <a href="https://storyset.com/work" className='text-decoration-none text-secondary w-100'>Work illustrations by Storyset</a>
+                </div>
+
+            </div>
+            <div className='container-sm aboutus mt-2 fs-5 d-flex flex-column flex-sm-row p-0'>
+                <div className='d-flex flex-column flex-lg-row w-100 bg-light'>
                     <div className='border-end w-auto'>
                         <nav>
                             <ul className="nav flex-column">
@@ -57,8 +68,32 @@ const About = ({ data }) => {
                     </div>
 
                 </div>
+                <div className='d-flex flex-column ms-2 fs-6'>
+                    <div className='text-light text-center border border-secondary mb-2 fw-bold rounded' style={{ backgroundColor: '#8e7ff7' }}>MINI TIPS</div>
+                    <div class="card text-white border-secondary mb-1" style={{ maxWidth: '18rem', maxHeight: '14rem', backgroundColor: '#8e7ff7' }}>
+
+                        <div class="card-body">
+                            <p class="card-text">Mantén una actitud positiva y enfócate en tus objetivos para tener éxito en la búsqueda de trabajo o en el trabajo mismo.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-secondary">José Castro</div>
+                    </div>
+                    <div class="card text-white border-secondary mb-1" style={{ maxWidth: '18rem', maxHeight: '14rem', backgroundColor: '#8e7ff7' }}>
+
+                        <div class="card-body">
+                            <p class="card-text">Investiga sobre la empresa o trabajo y prepárate para destacar en el puesto, incluyendo para entrevistas o reuniones importantes.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-secondary">Andry Martínez</div>
+                    </div>
+                    <div class="card text-white border-secondary mb-1" style={{ maxWidth: '18rem', maxHeight: '14rem', backgroundColor: '#8e7ff7' }}>
+
+                        <div class="card-body">
+                            <p class="card-text">Mantén una comunicación efectiva con colegas, empleadores y posibles empleadores para resolver problemas y establecer relaciones sólidas y exitosas.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-secondary">Anthony Valentin</div>
+                    </div>
+                </div>
             </div>
-        </BaseTemplate >
+        </div>
     )
 }
 
@@ -92,7 +127,7 @@ const evaluate = (type) => {
 
 const AdsPolitics = () => {
     return (
-        <>
+        <div>
             <div className="">
                 <h4>
                     <strong>Política de privacidad de anuncios.</strong>
@@ -154,7 +189,7 @@ const AdsPolitics = () => {
             <p>
                 Los Usuarios también podrán inhabilitar determinadas funcionalidades publicitarias mediante las correspondientes opciones de configuración de los dispositivos, como las opciones de configuración de publicidad del dispositivo para teléfonos móviles o la configuración de publicidad en general.
             </p>
-        </>
+        </div>
     )
 }
 
@@ -253,48 +288,57 @@ const Politics = () => {
 const Conditions = () => {
     return (
         <div className='mt-3' >
-            <h1><strong>Condiciones de uso</strong></h1>
-            <p>Empleo Seguro, como su nombre lo indica es un sitio web creado a fin de tener un empleo seguro para usted mismo y para su empleador, nuestra función principal orientar, motivar y enseñar a nuestro público en el ámbito laboral, disponemos de información que creemos que será útil para vosotros y consecuente para tu empleador, dicha información recogida de múltiples sitios web, libros reconocidos y basándonos en experiencia propia, como podremos ayudaros, inclusivamente os mantendremos informados sobre lo que pasa en el mundo relacionado con el trabajo, además disponemos de un formulario sencillo para llevaros a Google y buscar empleadores en tu zona. Hacemos énfasis, Empleo Seguro no ofrece un empleo a disposición ni mucho menos garantiza que vosotros encontréis dicho requerimiento propio, solo es una página informativa.
-            </p>
-            <p>Estados Unidos</p>
-            <p>Los siguientes son términos y condiciones específicas para los usuarios en los Estados Unidos de nuestros sitios web y aplicaciones móviles:
+            <h4><strong>Condiciones de uso</strong></h4>
+            <p>Empleo Seguro, como su nombre lo indica es un sitio web creado a fin de tener un empleo seguro para usted mismo y para su empleador, nuestra función principal orientar, motivar y enseñar a nuestro público en el ámbito laboral, disponemos de información que creemos que será útil para vosotros y consecuente para tu empleador, dicha información recogida de múltiples sitios web, libros reconocidos y basándonos en experiencia propia, como podremos ayudaros, inclusivamente os mantendremos informados sobre lo que pasa en el mundo relacionado con el trabajo, además disponemos de un formulario sencillo para llevaros a Google y buscar empleadores en tu zona. Hacemos énfasis, Empleo Seguro no ofrece un empleo a disposición ni mucho menos garantiza que vosotros encontréis dicho requerimiento propio, solo es una página informativa.</p>
 
-                1. Propiedad y uso del contenido: Todos los contenidos, información, imágenes, videos, gráficos, textos y otros materiales exhibidos están protegidos por las leyes de marcas registradas y derechos de autor. Estos materiales solo pueden ser utilizados para uso personal y no comercial de los usuarios. El uso comercial está prohibido sin previa autorización escrita de nuestra empresa.
+            <h5>Estados Unidos</h5>
 
-                2. Información de cuenta: Cada usuario es responsable de mantener la privacidad de su cuenta y cualquier actividad relacionada con ella. Cualquier uso no autorizado de una cuenta debe ser reportado inmediatamente. No nos hacemos responsables de las consecuencias de un uso no autorizado de una cuenta.
+            <p>Los siguientes son términos y condiciones específicas para los usuarios en los Estados Unidos de nuestros sitios web y aplicaciones móviles:</p>
 
-                3. Propiedad intelectual: Todos los derechos de propiedad intelectual pertenecen a nuestra empresa. Los usuarios no tienen derecho a reproducir, modificar, distribuir, vender o usar el contenido con fines comerciales. Cualquier uso no autorizado de propiedad intelectual será sancionado legalmente.
-
-                4. Política de privacidad: Nuestra empresa tiene una política de privacidad que protege la información personal del usuario. Los usuarios deben leer y entender esta política antes de utilizar el sitio o la aplicación.
-
-                5. Responsabilidad limitada: No somos responsables de cualquier daño o perjuicio directo o indirecto que puedan causar los contenidos del sitio, incluyendo virus, pérdida de datos, interrupciones de servicio, retrasos en la transmisión de información, errores u omisiones o cualquier otro tipo de pérdida directa o indirecta.
-
-                6. Jurisdicción: Estos términos están sujetos a las leyes de los Estados Unidos. Si surge algún conflicto legal entre el usuario y nuestra empresa, se debe resolver de acuerdo con las leyes de los Estados Unidos y la jurisdicción de los tribunales federales y estatales de los Estados Unidos.
-
-                7. Modificaciones: Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento y sin previo aviso. Los usuarios deben verificar periódicamente cualquier cambio en los términos y condiciones.
-
-                8. Cesión: No se permite la cesión o transferencia de los derechos otorgados por estos términos y condiciones ni del sitio web ni de la aplicación.
-
-                9. Rescisión: Nos reservamos el derecho de rescindir cualquier cuenta en cualquier momento y sin previo aviso si consideramos que el usuario ha violado cualquiera de los términos y condiciones de uso del sitio. También nos reservamos el derecho de eliminar la información provista por el usuario en la plataforma sin previo aviso.
-
-                10. Soporte al cliente: Para cualquier ayuda o soporte relacionado con el sitio o la aplicación, los usuarios pueden contactarnos por correo electrónico o por otras opciones de contacto que se proporcionen en el sitio web.
-
-                Al utilizar nuestro sitio web o nuestra aplicación, el usuario acepta estos términos y condiciones. Si no aceptas estas cláusulas, no podrás usar nuestro sitio web o nuestra aplicación.
-            </p>
+            <ol>
+                <li>
+                    <strong>Propiedad y uso del contenido:</strong> Todos los contenidos, información, imágenes, videos, gráficos, textos y otros materiales exhibidos están protegidos por las leyes de marcas registradas y derechos de autor. Estos materiales solo pueden ser utilizados para uso personal y no comercial de los usuarios. El uso comercial está prohibido sin previa autorización escrita de nuestra empresa.
+                </li>
+                <li>
+                    <strong>Información de cuenta:</strong> Cada usuario es responsable de mantener la privacidad de su cuenta y cualquier actividad relacionada con ella. Cualquier uso no autorizado de una cuenta debe ser reportado inmediatamente. No nos hacemos responsables de las consecuencias de un uso no autorizado de una cuenta.
+                </li>
+                <li>
+                    <strong>Propiedad intelectual:</strong> Todos los derechos de propiedad intelectual pertenecen a nuestra empresa. Los usuarios no tienen derecho a reproducir, modificar, distribuir, vender o usar el contenido con fines comerciales. Cualquier uso no autorizado de propiedad intelectual será sancionado legalmente.
+                </li>
+                <li>
+                    <strong>Política de privacidad:</strong> Nuestra empresa tiene una política de privacidad que protege la información personal del usuario. Los usuarios deben leer y entender esta política antes de utilizar el sitio o la aplicación.
+                </li>
+                <li>
+                    <strong>Responsabilidad limitada:</strong> No somos responsables de cualquier daño o perjuicio directo o indirecto que puedan causar los contenidos del sitio, incluyendo virus, pérdida de datos, interrupciones de servicio, retrasos en la transmisión de información, errores u omisiones o cualquier otro tipo de pérdida directa o indirecta.
+                </li>
+                <li>
+                    <strong>Jurisdicción:</strong> Estos términos están sujetos a las leyes de los Estados Unidos. Si surge algún conflicto legal entre el usuario y nuestra empresa, se debe resolver de acuerdo con las leyes de los Estados Unidos y la jurisdicción de los tribunales federales y estatales de los Estados Unidos.
+                </li>
+                <li>
+                    <p><strong>Modificaciones</strong>: Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento y sin previo aviso. Los usuarios deben verificar periódicamente cualquier cambio en los términos y condiciones.</p>
+                </li>
+                <li>
+                    <p><strong>Cesión</strong>: No se permite la cesión o transferencia de los derechos otorgados por estos términos y condiciones ni del sitio web ni de la aplicación.</p>
+                </li>
+                <li>
+                    <p><strong>Rescisión</strong>: Nos reservamos el derecho de rescindir cualquier cuenta en cualquier momento y sin previo aviso si consideramos que el usuario ha violado cualquiera de los términos y condiciones de uso del sitio. También nos reservamos el derecho de eliminar la información provista por el usuario en la plataforma sin previo aviso.</p>
+                </li>
+                <li>
+                    <p><strong>Soporte al cliente</strong>: Para cualquier ayuda o soporte relacionado con el sitio o la aplicación, los usuarios pueden contactarnos por correo electrónico o por otras opciones de contacto que se proporcionen en el sitio web.</p>
+                </li>
+            </ol>
+            <p>Al hacer uso de nuestro sitio web o nuestra aplicación, el usuario acepta automáticamente los términos y condiciones establecidos. Si el usuario no está de acuerdo con estos términos, lamentablemente no podrá utilizar nuestro sitio web o nuestra aplicación.</p>
         </div>
     )
 }
 const AboutUs = () => {
     return (
         <div className='mt-3' >
-            <h1><strong>¿Quiénes somos?</strong></h1>
-            <p>Empleo Seguro es un blog informativo cuya función es optimizar, orientar, motivar, enseñar a que usted
-                lector, tenga un mejor desempeño en su trabajo, les mostraremos unas pequeñas estrategias y tipsips
-                para su día a día, esperamos que les sea útil la información que disponemos, tenemos una sección
-                de noticias, para que este al tanto de lo que pasa en el mundo laboralmente, estaremos implementando
-                Cosas nuevas, para que su visita sea recurrente. Esperamos que nuestro contenido sea de su agrado
-                Y mejor aún, le ayude a crecer.
-            </p>
+            <h4><strong>¿Quiénes somos?</strong></h4>
+            <p>Es mucho más que un simple blog informativo. Nuestro objetivo principal es brindarte las herramientas y consejos necesarios para mejorar tu desempeño en el trabajo y alcanzar el éxito profesional que tanto anhelas. Sabemos que el mundo laboral puede ser complicado y abrumador, y es por eso que nos enfocamos en ofrecer información valiosa que puedas aplicar en tu día a día laboral.</p>
+            <p>Nuestra amplia variedad de estrategias y tips han sido cuidadosamente seleccionados para que puedas ser más efectivo y productivo en el trabajo. Y eso no es todo: también contamos con una sección de noticias para que siempre estés actualizado sobre lo que sucede en el mundo laboral y puedas tomar decisiones informadas.</p>
+            <p>En <strong>Empleo Seguro</strong> nos esforzamos por ofrecer contenido útil y relevante que te ayude a crecer tanto personal como profesionalmente. Nos tomamos muy en serio tu opinión, por lo que estamos en constante evolución e implementando nuevas secciones para que tu visita sea recurrente y enriquecedora.</p>
+            <p>En resumen, nuestro objetivo es ayudarte a alcanzar tus metas laborales y proporcionarte el conocimiento y la confianza que necesitas para triunfar. Esperamos que nuestro contenido sea de tu agrado y que nos acompañes en esta aventura hacia el éxito profesional. ¡Bienvenido a <em>Empleo Seguro</em>!</p>
             <p>
                 Ubicación: Venezuela, Caracas, Distrito Capital, La Castellana 1060
             </p>
@@ -306,7 +350,7 @@ const Cookiess = () => {
 
     return (
         <div className='mt-3' >
-            <h1><strong>Cookies</strong></h1>
+            <h4><strong>Cookies</strong></h4>
             <p>Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para
                 almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para
                 tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente.
@@ -330,11 +374,11 @@ const Cookiess = () => {
 const Contact = () => {
     return (
         <div className='mt-3' >
-            <h1><strong>Contacto</strong></h1>
-            <p>Disponemos de distintas redes sociales, correo electrónico y número de teléfono para atender
-                cualquier duda que tengan sobre nosotros, así como también estamos abiertos ampliamente a
-                recibir consejos o críticas sobre nuestro sitio, sugerencias, errores, entre otras cosas.
-            </p>
+            <h4><strong>Contacto</strong></h4>
+            <p>En <strong>Empleo Seguro</strong>, estamos comprometidos en brindarte el mejor servicio posible. Por eso, nos hemos asegurado de estar disponibles en diversas redes sociales, así como a través de correo electrónico y nuestro número de teléfono para cualquier consulta o inquietud que tengas. Creemos que la comunicación es fundamental para construir relaciones duraderas y satisfactorias con nuestros usuarios.</p>
+            <p>Además, en <strong>Empleo Seguro</strong> valoramos mucho la opinión de nuestros usuarios. Creemos que sus comentarios y sugerencias son esenciales para poder mejorar y ofrecer un mejor servicio. Por ello, nos encantaría recibir cualquier consejo, crítica constructiva, sugerencia o reporte de errores que nos ayude a mejorar continuamente nuestro sitio web y brindarles una mejor experiencia. Nos tomamos muy en serio todas las opiniones y estamos siempre dispuestos a escucharlas.</p>
+            <p>Ponemos a tu disposición diferentes medios para comunicarte con nosotros, como nuestras redes sociales, correo electrónico y número de teléfono. Estamos aquí para ayudarte y responder cualquier pregunta o inquietud que tengas. No dudes en contactarnos si necesitas ayuda en cualquier momento.</p>
+            <p>En resumen, nuestro objetivo es brindarte la mejor experiencia posible en <strong>Empleo Seguro</strong>, y para ello, estamos siempre disponibles para recibir tus comentarios y sugerencias. Creemos que la comunicación es esencial para construir una relación duradera y satisfactoria con nuestros usuarios, y estamos dispuestos a escucharte en todo momento. ¡No dudes en ponerte en contacto con nosotros!</p>
             <ul>
                 <li> <p><strong>Correo</strong>: <a href='#'>kevindosmartinfenixzone@gmail.com</a></p></li>
                 <li> <p><strong>WhatsApp</strong>: <a href='#'>+57 311 2313082</a></p></li>

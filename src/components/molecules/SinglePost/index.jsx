@@ -29,7 +29,6 @@ const SinglePost = ({ data: datos }) => {
 
 
     return (
-        <BaseTemplate mostViewed={datos}>
             <div className="card rounded-0 shadow bg-light">
 
                 <article>
@@ -92,7 +91,6 @@ const SinglePost = ({ data: datos }) => {
                 </article>
 
             </div>
-        </BaseTemplate>
     )
 }
 
