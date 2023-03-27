@@ -4,6 +4,7 @@ import './navbar.css'
 import favicon from './favicon.svg'
 
 export const NavBar = () => {
+    //que ladilla
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light mb-2">
             <div className="container">
