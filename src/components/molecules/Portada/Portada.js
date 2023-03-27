@@ -7,15 +7,21 @@ const Portada = () => {
     const eslogan = info.eslogan
 
     return (
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel slide portada py-2 px1 mt-5 d-flex justify-content-center align-items-center" data-bs-ride="carousel">
 
             <div className="carousel-inner ">
 
                 {
                     eslogan.map((item, key) => (
                         <div className={`carousel-item ${item.status}`} key={key}>
-                            <img loading='lazy' className='image' alt={`imagen del eslogan: ${item.title}`} src={item.imagen} />
-                            <div className='text-image'>{item.title}</div>
+                            <div className='texto-portada fs-1 text-center text-light'>{item.title}</div>
+                            <div className='d-flex flex-column w-100 align-items-center'>
+                                <img loading='lazy' className='image' alt={`imagen del eslogan: ${item.title}`} src={item.imagen} />
+                                <a href="https://storyset.com/work" className='link'>Work illustrations by Storyset</a>
+                            </div>
+
+
+
                         </div>
                     ))
                 }

@@ -19,26 +19,27 @@ const CardRecomendaciones = ({ item }) => {
     }, [item])
 
     return (
-        <div className="card w-100 mb-2 user-select-none " onClick={() => handleOnClick()}>
-            <div className="row g-0">
-                <div className="col-md-4 d-flex">
-                    <img loading='lazy' src={item['attributes']?.image} className="img-fluid imagen w-100 img-thumbnail" alt="imagen de las racomendaciones" />
-                </div>
-                <div className="col-md-8">
-                    <div className="card-body d-flex flex-column justify-content-between h-100">
-                        <TitleCard className="title-recomendaciones fs-5" title={item['attributes']?.title} />
-                      
-                        <DescriptionCard className="text-recomendaciones text-secondary" description={item['attributes']?.description}/>
-                    <small className="text-muted border-top">{readingTime(item['attributes']?.description)} m de lectura</small>
-                </div>
-                </div>
-                <div className='d-flex flex-row justify-content-between text-end px-2 py-1 my-1 align-items-center w-100'>
-                    <div className='d-flex flex-lg-row mx-1 text-start'>
-                        <small className='text-primary'>{moment(item['attributes']?.publishedAt).format('MMM Do YYYY')}</small>
-                        <small className='text-secondary'> | by: {item['attributes']?.autor}.</small>
+        <div className="mycard shadow bg-light d-flex flex-column user-select-none mb-2 mb-sm-3" style={{cursor:'pointer'}} onClick={() => handleOnClick()}>
+            <img className='imagen' src={item['attributes']?.image} alt="image card recomendacion" loading='lazy' />
+            <div className='px-2 px-sm-4'>
+                <div className='header d-flex flex-row justify-content-between mt-2'>
+                    <div className='d-flex justify-content-around'>
+                        <label className='date fs-6 text-secondary'>28 agosto del 2020</label>
+                        <label className='lectura fs-6'>3 min</label>
                     </div>
-                   
+                    <div>
+                        <label className='autor fs-6 text-secondary'>Kevin Jose</label>
+                    </div>
                 </div>
+                <TitleCard className="title-recomendaciones mt-1 fs-3" title={item['attributes']?.title} />
+                <DescriptionCard className="text-recomendaciones mt-2 fs-6" description={item['attributes']?.description} />
+
+
+            </div>
+            <div className='divisor border-bottom mt-3 border-secondary'></div>
+            <div className='footer p-3 d-flex justify-content-between align-items-center'>
+                <div className='texto-footer'>Leer articulo</div>
+                <div className='fw-bold fs-5'>{'>'}</div>
             </div>
         </div>
     )

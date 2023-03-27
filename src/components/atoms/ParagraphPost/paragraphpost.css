@@ -1,13 +1,14 @@
-.paragraph > p{
-    text-indent: 30px;
+.paragraph > p, h1,h2,h3,h4,h5{
     margin: 0px;
     margin-top: 15px;
     margin-bottom: 30px;
-    font-size: 18px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'News Cycle', sans-serif;
+    word-spacing: 0.25em;
+    letter-spacing: 1px;
     font-weight: normal;
-    line-height: 30px;
+    line-height: 36px;
     text-rendering: auto;
+    
 }
 
 .paragraph > ul, li{

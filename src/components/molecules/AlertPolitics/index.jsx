@@ -160,8 +160,8 @@ const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesC
                                             <label className='fs-5 fw-bold'>
                                                 Necesarios
                                             </label>
-                                            <div class="form-check form-switch ">
-                                                <input class="checkbox-banner form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" disabled checked style={{ width: 60, height: 30 }} />
+                                            <div className="form-check form-switch ">
+                                                <input className="checkbox-banner form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" disabled checked style={{ width: 60, height: 30 }} />
 
                                             </div>
                                         </div>
@@ -171,8 +171,8 @@ const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesC
                                             <label className='fs-5 fw-bold'>
                                                 Funcionalidad
                                             </label>
-                                            <div class="form-check form-switch ">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style={{ width: 60, height: 30 }} />
+                                            <div className="form-check form-switch ">
+                                                <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style={{ width: 60, height: 30 }} />
 
                                             </div>
                                         </div>
@@ -182,8 +182,8 @@ const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesC
                                             <label className='fs-5 fw-bold'>
                                                 Experiencia
                                             </label>
-                                            <div class="form-check form-switch ">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style={{ width: 60, height: 30 }} />
+                                            <div className="form-check form-switch ">
+                                                <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style={{ width: 60, height: 30 }} />
 
                                             </div>
                                         </div>
@@ -193,8 +193,8 @@ const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesC
                                             <label className='fs-5 fw-bold'>
                                                 Medición
                                             </label>
-                                            <div class="form-check form-switch ">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style={{ width: 60, height: 30 }} />
+                                            <div className="form-check form-switch ">
+                                                <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style={{ width: 60, height: 30 }} />
 
                                             </div>
                                         </div>
@@ -204,8 +204,8 @@ const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesC
                                             <label className='fs-5 fw-bold'>
                                                 Marketing
                                             </label>
-                                            <div class="form-check form-switch ">
-                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style={{ width: 60, height: 30 }} />
+                                            <div className="form-check form-switch ">
+                                                <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style={{ width: 60, height: 30 }} />
 
                                             </div>
                                         </div>

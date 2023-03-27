@@ -27,6 +27,11 @@
     object-fit: cover;
 }
 
+.container-title {
+    background-color: #8e7ff7;
+    
+}
+
 .text-imagen {
     position: absolute;
     display: flex;
@@ -40,11 +45,9 @@
 }
 
 .postFooter {
-   
     color: white !important;
     font-size: 18px !important;
-    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-    text-shadow: 0 1px 1px #000;
+    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
     font-weight: 100;
 }
 
