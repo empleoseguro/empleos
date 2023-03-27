@@ -1,15 +1,23 @@
 .imagen {
     object-fit: cover;
    
-    height: 180px;
 }
 
 .title {
     font-size: calc(0.01rem + 1vw);
 }
 
+.mycard {
+background-color: #fafafa;
+color: #606060;
+}
+
 .icon-red {
     cursor: pointer;
+}
+
+.lectura {
+    color: #8e7ff7;
 }
 
 .text-recomendaciones {

@@ -1,5 +1,5 @@
-{
-    "data": [
+export const apiJSON =
+    [
         {
             "id": 1,
             "attributes": {
@@ -10,7 +10,7 @@
                 "updatedAt": "2022-10-14T05:52:31.231Z",
                 "publishedAt": "2022-10-13T21:18:32.593Z",
                 "image": "https://i.ibb.co/VqgSyJM/medico-cansado-11zon.jpg",
-                "image_autor": "freepik",
+                "image_autor": "pch.vector",
                 "autor": "J. Alejandro"
             }
         },
@@ -18,13 +18,13 @@
             "id": 2,
             "attributes": {
                 "title": "Como ser más eficiente en tú trabajo",
-                "description": "    <p>\n      Sigue estas instrucciones si quieres <strong>ser más productivo</strong>.\n      Haz miles de cosas a la vez o trabaja demasiado. Cuando eres productivo en\n      el trabajo, es porque empezaste bien y completaste el trabajo o actividad\n      en el menor tiempo posible. Según Performica, que tiene experiencia en la\n      evaluación de empleados a gran escala, 6 de cada 10 personas tienen un\n      problema importante con la ineficiencia, esencialmente no terminan lo que\n      comienzan, pasan a otras cosas y, en última instancia, no se organizan.\n    </p>\n\n    <h2>Procastinación</h2>\n    <p>\n      ¿Conoces la palabra <strong>\"procrastinación\"</strong>? Significa\n      posponer. Las cosas sin terminar se adueñan de tu cerebro y no podrás\n      concentrarte en otras cosas que hay que hacer más adelante porque crecerán\n      y causarán más problemas, por lo que es mejor terminar tu actividad antes\n      de comenzar otra. Comience por establecer metas Trate de establecer sus\n      metas para evitar cambiarlas constantemente y obtener mejores resultados.\n      Para hacer esto, necesita organizar sus pensamientos y deseos, establecer\n      una meta realista y alcanzable y desarrollar un plan de acción. Por\n      ejemplo, puede definir tareas que se realizarán por hora o momento del\n      día. Se da prioridad a los más difíciles. Usa recordatorios o\n      recordatorios para establecer fechas límite y recuerda entregar.\n    </p>\n\n    <p>\n      Pruebe una actividad a la vez Muchas funciones requieren toda su atención.\n      Si comienza muchas tareas al mismo tiempo, es posible que no pueda\n      completarlas, simplemente está ocupado y el tiempo puede ser limitado. Da\n      un paso a la vez y pasa al siguiente cuando hayas terminado. Esta es una\n      guía invaluable que lo ayudará a concentrarse mejor y trabajar más rápido.\n      Use listas para aclarar sus acciones y \"liberar\" su enfoque. Usar una\n      lista de cosas por hacer para organizarse es una excelente manera de\n      hacerlas a tiempo. Las listas de verificación también pueden ayudarlo a\n      olvidar cosas sin depender de la memoria. Si estás considerando esta\n      opción, puedes hacerlo de la manera tradicional: usando un cuaderno y un\n      lápiz o \"notas\"; También puede usar un planificador o calendario digital\n      en su teléfono o computadora\n    </p>\n\n    <p>\n      ¡Lo principal es escribir todo! Performica concluye con un consejo muy\n      importante: mantén toda la información por escrito. Verás como mejora la\n      situación” los datos verbales se olvidan, se desdibujan y se distorsionan,\n      aunque no sea esa la intención del artista. Aunque parezca sencillo, una\n      buena gestión de la información para evitar cambios accidentales o\n      malintencionados puede salvarte de muchos problemas.\n    </p>\n\n    <p>\n      La ñapa: Escucha música que no te distraiga Sabemos que escuchar música\n      pop o tu canción favorita puede ser una manera de amenizar tu día de\n      trabajo y motivarte a hacer las cosas. Sin embargo, algunas canciones\n      pueden distraerte, especialmente aquellas que son pegadizas o te obligan a\n      seguir la letra, y siempre es una buena idea hacer un buen uso de las\n      cosas que se relacionan con todo lo que haces y pueden influir en tu\n      trabajo. Así que es una buena idea escuchar música instrumental, ya sea de\n      videojuegos o películas, eso sí, sin los sonidos y listas de reproducción.\n    </p>",
+                "description": "<p>Esta sección presenta algunos consejos prácticos para ser más eficiente en el trabajo. Estos consejos incluyen establecer metas claras y realistas, evitar la procrastinación, hacer una tarea a la vez, utilizar listas de tareas pendientes, escribir todo y escuchar música instrumental. Siguiendo estos consejos, se puede mejorar la gestión del tiempo y aumentar la productividad en el trabajo.</p><h2>Establece metas claras y realistas</h2><p>Para comenzar, es esencial establecer metas claras y realistas. Esto te ayudará a concentrarte en lo que necesitas hacer y a no cambiar constantemente tus objetivos. Para hacerlo, organiza tus pensamientos y deseos, establece una meta realista y alcanzable, y desarrolla un plan de acción. Define tareas que se realizarán por hora o momento del día y da prioridad a las más difíciles.</p><h2>Evita la procrastinación</h2><p>La procrastinación es el enemigo de la eficiencia. Si dejas cosas sin terminar, se adueñarán de tu cerebro y no podrás concentrarte en otras tareas que necesitas realizar más adelante. En lugar de eso, trata de terminar tus actividades antes de comenzar otras nuevas. Si tienes dificultades para concentrarte, intenta dividir tu tiempo en bloques de trabajo y descanso. Por ejemplo, trabaja durante 50 minutos y descansa durante 10 minutos antes de comenzar la siguiente tarea.</p><h2>Haz una tarea a la vez</h2><p>En lugar de tratar de hacer muchas tareas al mismo tiempo, concéntrate en una sola tarea a la vez. Si comienzas muchas tareas al mismo tiempo, es posible que no puedas completarlas a tiempo y te sientas abrumado. Tómate el tiempo para hacer una tarea bien antes de pasar a la siguiente. Esto te ayudará a concentrarte mejor y trabajar más rápido.</p><h2>Utiliza listas de tareas pendientes</h2><p>Las listas de tareas pendientes son una excelente manera de mantenerte organizado y asegurarte de hacer las cosas a tiempo. Puedes usar una lista de cosas por hacer para organizar tus tareas y no depender de la memoria. Usa una libreta o aplicación digital para hacer tu lista de tareas pendientes y asegúrate de priorizar las más importantes.</p><h2>Escribe todo</h2><p>Mantén toda la información por escrito para evitar cambios accidentales o malintencionados. Los datos verbales pueden ser olvidados, desdibujados y distorsionados sin la intención del hablante. Mantener tus ideas y tareas por escrito te ayudará a tener una mejor gestión de la información.</p><h2>Escucha música instrumental</h2><p>La música puede ser una excelente manera de motivarte en el trabajo, pero algunas canciones pueden distraerte. En lugar de escuchar música pop o canciones con letras pegajosas, elige música instrumental que no te distraiga. La música de videojuegos o películas puede ser una buena opción para mantenerte enfocado y concentrado.</p><p>En resumen, ser más eficiente en tu trabajo requiere tiempo, esfuerzo y práctica. Establece metas claras y realistas, evita la procrastinación, haz una tarea a la vez, utiliza listas de tareas pendientes, escribe todo y escucha música instrumental. Con estos consejos prácticos, podrás aumentar tu productividad y ser más efectivo en tu trabajo.",
                 "category": "recomendaciones",
                 "createdAt": "2022-10-07T18:48:00.068Z",
                 "updatedAt": "2022-10-14T05:56:09.230Z",
                 "publishedAt": "2022-10-11T06:21:22.269Z",
                 "image": "https://i.ibb.co/D57ddtj/exito-individual.jpg",
-            "image_autor": "kues1", 
+                "image_autor": "storyset",
                 "autor": "José Castro"
             }
         },
@@ -266,13 +266,11 @@
                 "autor": "J. Alejandro"
             }
         }
-    ],
-    "meta": {
-        "pagination": {
-            "page": 1,
-            "pageSize": 25,
-            "pageCount": 1,
-            "total": 8
+    ]
+
+    export const vectors = [
+        {
+            autor: 'Storyset',
+            image: 'https://i.ibb.co/W6KbGb2/imagenes-nuevas.png'
         }
-    }
-}
+    ]

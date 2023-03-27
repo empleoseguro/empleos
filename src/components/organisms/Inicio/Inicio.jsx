@@ -60,25 +60,23 @@ export const Inicio = ({ data }) => {
     }
 
     return (
-        <BaseTemplate mostViewed={data}>
-            <div className='d-flex flex-column  w-100 h-50'>
-                <Portada />
-                <div className='row mt-1 gx-2 row-cols-1'>
-
-                    <div className='col-lg-8 order-md-2  recomendaciones'>
-                        <div className=' fs-6 fw-bold text-center w-100 mb-1'>RECOMENDACIONES</div>
-                        {
-                            filter(data, 'recomendaciones').slice(status?.init, status?.final).map((item, key) => (
-                                <div key={key}>
-                                    <CardRecomendaciones item={item} />
-                                </div>
-                            ))
-                        }
-
-                    </div>
-
-                    <div className='col-lg-4 order-md-1 noticias'>
-                        <div className=' fs-6 fw-bold text-center w-100 mb-1'>NOTICIAS</div>
+        <>
+            <Portada />
+            <div className='row  mt-2 m-0 p-0 d-flex justify-content-center'>
+                <div className='col-2 d-none d-md-flex border border text-center border border-secondary '></div>
+                <div className='col-lg-6 m-0 p-0 mx-sm-3'>
+                    {
+                        filter(data, 'recomendaciones').slice(status?.init, status?.final).map((item, key) => (
+                            <div key={key}>
+                                <CardRecomendaciones item={item} />
+                            </div>
+                        ))
+                    }
+                </div>
+                <div className='col-lg-3 m-0 p-0 row'>
+                    <div className='col-12 mb-3  order-sm-1 d-flex text-center border border-secondary '>ADS</div>
+                    <div className='col m-0 p-0'>
+                        <div className='fs-6 fw-bold text-center bg-light p-1'>NOTICIAS</div>
                         {
                             filter(data, 'noticias').slice(statusNoti?.init, statusNoti?.final).map((item, key) => (
                                 <div key={key}>
@@ -88,44 +86,43 @@ export const Inicio = ({ data }) => {
                         }
                     </div>
 
-
-
-
-
-
                 </div>
 
-                <nav className='d-flex justify-content-center pe-auto user-select-none'>
-                    <ul className="pagination pagination-sm">
 
-                        <li className={`page-item ${active === 1 && 'active'}`}
-                            onClick={() => {
-                                page(1)
-                                pageNoti(1)
-                            }} aria-current="page">
-                            <span className="page-link">1</span>
-                        </li>
-                        <li className={`page-item ${active === 2 && 'active'}`}
-                            onClick={() => {
-                                page(2)
-                                pageNoti(2)
-                            }}>
-                            <span className="page-link">2</span>
-                        </li>
-                        <li className={`page-item ${active === 3 && 'active'}`}
-                            onClick={() => {
-                                page(3)
-                                pageNoti(3)
-                            }}>
-                            <span className="page-link">3</span>
-                        </li>
-                       
 
-                    </ul>
-                </nav>
             </div>
-    
-        </BaseTemplate >
+
+            <nav className='d-flex justify-content-center pe-auto user-select-none'>
+                <ul className="pagination pagination-sm">
+
+                    <li className={`page-item ${active === 1 && 'active'}`}
+                        onClick={() => {
+                            page(1)
+                            pageNoti(1)
+                        }} aria-current="page">
+                        <span className="page-link">1</span>
+                    </li>
+                    <li className={`page-item ${active === 2 && 'active'}`}
+                        onClick={() => {
+                            page(2)
+                            pageNoti(2)
+                        }}>
+                        <span className="page-link">2</span>
+                    </li>
+                    <li className={`page-item ${active === 3 && 'active'}`}
+                        onClick={() => {
+                            page(3)
+                            pageNoti(3)
+                        }}>
+                        <span className="page-link">3</span>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+
+        </>
     )
 }
 

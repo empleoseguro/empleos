@@ -1,7 +1,8 @@
 .App {  
   background-color: #dce1e5;
   /* background-color:darkslategray; */
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: 'Nanum Myeongjo', serif;
+
 }
 
 .icon-sm {
@@ -12,4 +13,6 @@
 a {
   color: black;
 }
+
+
 

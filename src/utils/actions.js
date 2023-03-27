@@ -1,12 +1,12 @@
-// import { api } from "./config"
 
-import apiJSON from './data.json'
+import { apiJSON } from './data'
 import { getPostById } from "./functions"
 
-export const fetchAllPosts =  () => {
+export const fetchAllPosts = () => {
     const response = { status: true, data: [], error: null }
     try {
-        response.data = apiJSON.data
+        response.data = apiJSON
+        
     } catch (error) {
         response.error = error
         response.status = false
@@ -18,8 +18,7 @@ export const fetchPostById = (id) => {
 
     const response = { status: true, data: [], error: null }
     try {
-        const datos = getPostById(apiJSON.data, id)
-        
+        const datos = getPostById(apiJSON, id)
         response.data = datos
     } catch (error) {
         response.error = error

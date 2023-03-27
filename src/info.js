@@ -2,24 +2,24 @@ export const info = {
     eslogan: [
         {
             status: 'active',
-            imagen: 'https://i.ibb.co/hCb135j/eslogan1.webp',
-            title: "El éxito no está en vencer siempre sino en no desanimarse nunca."
+            imagen: 'https://i.ibb.co/RCxDXZ8/Experts-pana.png',
+            title: "Potencia tus habilidades para conseguir el trabajo perfecto."
         },
         {
-            imagen: 'https://i.ibb.co/gy2xGJN/eslogan2.jpg',
-            title: "La tragedia no es no alcanzar tus objetivos, la tragedia es no tener objetivos que alcanzar.",
+            imagen: 'https://i.ibb.co/wNKDpYr/Experts-amico.png',
+            title: "Conviértete en el candidato ideal con nuestros consejos.",
             autor: "pressfoto"
         },
         {
-            imagen: 'https://i.ibb.co/bzFbLW6/eslogan3.webp',
-            title: "Nunca pares, nunca te conformes, hasta que lo bueno sea mejor y lo mejor excelente. Anónimo."
+            imagen: 'https://i.ibb.co/KsG1Tss/Profile-data-rafiki.png',
+            title: "Haz que tu currículum destaque entre los demás."
         },
         {
-            imagen: 'https://i.ibb.co/q9BmrrQ/eslogan4.webp',
-            title: "El 80% del éxito se basa simplemente en insistir."
+            imagen: 'https://i.ibb.co/4f8RGZ7/Experts-bro.png',
+            title: "¡Deja de buscar, empieza a encontrar!"
         },
         {
-            imagen: 'https://i.ibb.co/KVdcJRZ/eslogan5.webp',
+            imagen: 'https://i.ibb.co/pzKgNNf/Freelancer-cuate.png',
             title: "Si tú sabes lo que vales, ve y consigue lo que mereces."
         },
         // {

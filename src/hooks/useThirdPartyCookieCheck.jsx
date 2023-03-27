@@ -7,7 +7,7 @@ const useThirdPartyCookieCheck = () => {
     useEffect(() => {
         const frame = document.createElement("iframe");
         frame.id = "3pc";
-        frame.src = "https://raw.githubusercontent.com/empleoseguro/empleos/main/thirdpartycookies.html"; //Add your hosted domain url here
+        frame.src = "https://chamithrepo.github.io/create-third-party-cookie/"; //Add your hosted domain url here
         frame.style.display = "none";
         frame.style.position = "fixed";
         document.body.appendChild(frame);
