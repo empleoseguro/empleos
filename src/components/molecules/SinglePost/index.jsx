@@ -14,7 +14,6 @@ const SinglePost = ({ data: datos }) => {
 
     const [data, setdata] = useState([])
     const { postId } = useParams()
-    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const response = fetchPostById(postId)

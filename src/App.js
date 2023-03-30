@@ -25,7 +25,13 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={MyInicio} />
-        <Route path='/post/:postId' element={MySinglePost} />
+        <Route path='/post/:postId' element={MySinglePost}
+          meta={{
+            'og:title': 'Título de la publicación',
+            'og:description': 'Descripción de la publicación',
+            'og:url': 'https://empleoseguro.tech/post/1',
+          }}
+        />
         <Route path="/formulario" element={MyFormulario} />
         <Route path="/about/:section" element={MyAbout} />
       </Routes>
