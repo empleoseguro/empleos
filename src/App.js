@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { NavBar } from './components/organisms/NavBar/NavBar';
 import { Inicio } from './components/organisms/Inicio/Inicio';
 import SinglePost from './components/molecules/SinglePost';
@@ -17,16 +17,16 @@ function App() {
 
   const data = useGetPosts()
 
+
   return (
     <div className="App">
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Inicio data={data} />}>
-        </Route>
-        <Route path='/post/:postId' element={<SinglePost data={data} />} />
-        <Route path="/formulario" element={<Formulario data={data} />} />
-        <Route path="/about/:section" element={<About data={data} />} />
-      </Routes>
+      <Switch>
+        <Route exact path="/" render={() => <Inicio data={data} />} />
+        <Route path='/post/:postId' render={() => <SinglePost data={data} />} />
+        <Route path="/formulario" render={() => <Formulario data={data} />} />
+        <Route path="/about/:section" render={() => <About data={data} />} />
+      </Switch>
       <Footer />
 
       {

@@ -18,7 +18,7 @@ export const NavBar = () => {
                     <div className="navbar-nav ms-auto fw-bold">
 
                         <div class="nav-item disabled  dropdown">
-                            <Link class="dropdown-toggle disabled nav-link text-decoration-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link to="/" class="dropdown-toggle disabled nav-link text-decoration-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 CATEGORÍAS
                             </Link>
 

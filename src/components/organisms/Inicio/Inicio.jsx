@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import CardNoticias from '../../molecules/CardNoticias'
 import CardRecomendaciones from '../../molecules/CardRecomendaciones'
 import Portada from '../../molecules/Portada/Portada'
-import BaseTemplate from '../../templates/BaseTemplate'
 import './inicio.css'
 
 export const Inicio = ({ data }) => {
