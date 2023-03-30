@@ -1,25 +1,19 @@
 import React, { useEffect } from 'react'
 import './card.css'
-import { useNavigate } from 'react-router-dom'
 import moment from 'moment'
 import { readingTime } from '../../../utils/functions'
 import TitleCard from '../../atoms/TitleCard'
 import DescriptionCard from '../../atoms/DescriptionCard'
+import { Link } from 'react-router-dom'
 
 const CardRecomendaciones = ({ item }) => {
-
-    const navigate = useNavigate()
-
-    const handleOnClick = () => {
-        navigate(`/post/${item.id}`)
-    }
 
     useEffect(() => {
         readingTime(item['attributes']?.title + item['attributes']?.description)
     }, [item])
 
     return (
-        <div className="mycard shadow bg-light d-flex flex-column user-select-none mb-2 mb-sm-3" style={{cursor:'pointer'}} onClick={() => handleOnClick()}>
+        <Link to={`/post/${item.id}`} className="mycard shadow bg-light d-flex flex-column user-select-none mb-2 mb-sm-3 text-decoration-none" style={{ cursor: 'pointer' }}>
             <img className='imagen' src={item['attributes']?.image} alt="image card recomendacion" loading='lazy' />
             <div className='px-2 px-sm-4'>
                 <div className='header d-flex flex-row justify-content-between mt-2'>
@@ -41,7 +35,7 @@ const CardRecomendaciones = ({ item }) => {
                 <div className='texto-footer'>Leer articulo</div>
                 <div className='fw-bold fs-5'>{'>'}</div>
             </div>
-        </div>
+        </Link>
     )
 }
 

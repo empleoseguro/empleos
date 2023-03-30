@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams, Link } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import BaseTemplate from '../../templates/BaseTemplate'
 import './about.css'
 
@@ -9,7 +9,6 @@ const About = ({ data }) => {
 
     const [mode, setMode] = useState('politics')
 
-    const navigate = useNavigate()
 
 
 
