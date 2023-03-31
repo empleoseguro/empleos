@@ -99,211 +99,210 @@ const evaluate = (type) => {
 
 const AdsPolitics = () => {
     return (
+        <div>
+            <h3>Política de privacidad</h3>
+            <p>Última actualización: 31 de marzo de 2023</p>
 
-        <div class="sharethis-privacy-policy"></div>
+            <p>Gracias por visitar la Política de Privacidad de Empleo Seguro. Esta Política de privacidad explica cómo Empleo Seguro (colectivamente, “Empleo Seguro”, “nosotros”, “nos” o “nuestro”) recopila, usa y comparte información sobre usted (“usted”, “suyo” o “usuario”) cuando accede o utiliza nuestros sitios web (“Servicios”).</p>
+            <p>Los usuarios son responsables de los datos de terceros que proporcionen o compartan a través de los Servicios y confirman que cuentan con el consentimiento del tercero para proporcionarnos dichos datos.</p>
+            <br />
 
-        // <div>
-        //     <h3>Política de privacidad</h3>
-        //     <p>Última actualización: 31 de marzo de 2023</p>
-
-        //     <p>Gracias por visitar la Política de Privacidad de Empleo Seguro. Esta Política de privacidad explica cómo Empleo Seguro (colectivamente, “Empleo Seguro”, “nosotros”, “nos” o “nuestro”) recopila, usa y comparte información sobre usted (“usted”, “suyo” o “usuario”) cuando accede o utiliza nuestros sitios web (“Servicios”).</p>
-        //     <p>Los usuarios son responsables de los datos de terceros que proporcionen o compartan a través de los Servicios y confirman que cuentan con el consentimiento del tercero para proporcionarnos dichos datos.</p>
-        //     <br />
-
-        //     <h3>Información que recopilamos</h3>
-        //     <p>Podemos recopilar y combinar información sobre usted cuando accede o utiliza los Servicios, incluidos:</p>
-        //     <p><strong>Información de contacto</strong>: como:</p>
-        //     <ul>
-        //         <li>
-        //             <p>nombre y apellido</p>
-        //         </li>
-        //         <li>
-        //             <p>dirección de correo electrónico</p>
-        //         </li>
-        //         <li>
-        //             <p>número de teléfono</p>
-        //         </li>
-        //         <li>
-        //             <p>dirección (calle, ciudad, estado, código postal)</p>
-        //         </li>
-        //     </ul>
-        //     <p><strong>Información de registro y uso: </strong>como el tipo de navegador que usa, el modelo de hardware, el sistema operativo, la dirección IP, los identificadores únicos del dispositivo, los tiempos de acceso, las páginas visitadas, los enlaces en los que se hizo clic y el comportamiento de navegación, como el tiempo gastado, de qué sitio proviene, qué sitio visita cuando nos deja y comportamiento de navegación.</p>
+            <h3>Información que recopilamos</h3>
+            <p>Podemos recopilar y combinar información sobre usted cuando accede o utiliza los Servicios, incluidos:</p>
+            <p><strong>Información de contacto</strong>: como:</p>
+            <ul>
+                <li>
+                    <p>nombre y apellido</p>
+                </li>
+                <li>
+                    <p>dirección de correo electrónico</p>
+                </li>
+                <li>
+                    <p>número de teléfono</p>
+                </li>
+                <li>
+                    <p>dirección (calle, ciudad, estado, código postal)</p>
+                </li>
+            </ul>
+            <p><strong>Información de registro y uso: </strong>como el tipo de navegador que usa, el modelo de hardware, el sistema operativo, la dirección IP, los identificadores únicos del dispositivo, los tiempos de acceso, las páginas visitadas, los enlaces en los que se hizo clic y el comportamiento de navegación, como el tiempo gastado, de qué sitio proviene, qué sitio visita cuando nos deja y comportamiento de navegación.</p>
 
 
-        //     <br />
+            <br />
 
-        //     <h3>Fuentes de información y Tecnologías de Seguimiento</h3>
+            <h3>Fuentes de información y Tecnologías de Seguimiento</h3>
 
-        //     <p>Recopilamos información que usted nos proporciona directamente, como cuando envía un formulario o nos envía un mensaje con su información.</p>
-        //     <p>También podemos recibir información sobre usted de nuestros socios, incluidos, entre otros, socios de distribución, servicios de datos y empresas de marketing. Podemos combinar esta información con otra información que recopilamos de usted o sobre usted. En estos casos, nuestra Política de privacidad rige el manejo de la información combinada.</p>
-        //     <p>Nosotros y nuestros socios podemos recopilar la información indicada en esta política de privacidad mediante cookies, balizas web, píxeles y otras tecnologías similares. Estas tecnologías se utilizan para la autenticación, para almacenar sus preferencias o progreso, para análisis y para publicidad y análisis. Las cookies son pequeños archivos de texto que se almacenan en el ordenador del Usuario. Los usuarios pueden configurar su navegador para rechazar las cookies por completo, rechazar nuestras cookies en particular o eliminar las cookies. Sin embargo, esto puede causar que algunos o todos nuestros Servicios no funcionen en la computadora o dispositivo de dicho usuario.</p>
-        //     <br />
-        //     <h3>Cómo usamos su información</h3>
-        //     <p>Utilizamos la información que recopilamos sobre usted para proporcionar, mantener y mejorar nuestros Servicios y otras interacciones que tenemos con usted. Por ejemplo, usamos la información recopilada para:</p>
-        //     <ul>
-        //         <li>
-        //             <p>Facilitar y mejorar nuestra experiencia en línea;</p>
-        //         </li>
-        //         <li>
-        //             <p>Proporcionar y entregar productos y servicios, realizar autenticación, procesar transacciones y devoluciones, y enviarle información relacionada, incluidas confirmaciones, recibos, facturas, encuestas de experiencia del cliente y avisos relacionados con productos o Servicios;</p>
-        //         </li>
-        //         <li>
-        //             <p>Procesar y entregar promociones;</p>
-        //         </li>
-        //         <li>
-        //             <p>Responder a sus comentarios y preguntas y brindar servicio al cliente;</p>
-        //         </li>
-        //         <li>
-        //             <p>Si nos ha indicado que desea recibir notificaciones o mensajes promocionales;</p>
-        //         </li>
-        //         <li>
-        //             <p>Detectar, investigar y prevenir transacciones fraudulentas y otras actividades ilegales y proteger nuestros derechos y propiedad y otros;</p>
-        //         </li>
-        //         <li>
-        //             <p>Cumplir con nuestras obligaciones legales y financieras;</p>
-        //         </li>
-        //         <li>
-        //             <p>Supervisar y analizar tendencias, uso y actividades;</p>
-        //         </li>
-        //         <li>
-        //             <p>Proporcionar y permitir que nuestros socios proporcionen publicidad y marketing dirigido a sus intereses.</p>
-        //         </li>
-        //     </ul>
-        //     <br />
-        //     <h3>Cómo podemos compartir información</h3>
-        //     <p>Podemos compartir su información personal en las siguientes situaciones:</p>
-        //     <ul>
-        //         <li>
-        //             <p><strong>Proveedores de servicios de terceros. </strong>Podemos compartir datos con proveedores de servicios, vendedores, contratistas o agentes que completan transacciones o prestan servicios en nuestro nombre, como aquellos que nos ayudan con nuestro negocio y operaciones internas como envío y entrega, procesamiento de pagos, prevención de fraude , atención al cliente, tarjetas regalo, experiencias, personalización, marketing y publicidad;</p>
-        //         </li>
-        //         <li>
-        //             <p><strong>Cambio en el negocio. </strong>Podemos compartir datos en relación con una transacción comercial corporativa, como una fusión o adquisición de todo o una parte de nuestro negocio a otra empresa, empresa conjunta, reorganización corporativa, insolvencia o quiebra, financiación o venta de activos de la empresa. ;</p>
-        //         </li>
-        //         <li>
-        //             <p><strong>Para cumplir con la ley. </strong>Podemos compartir datos para facilitar el proceso legal a partir de solicitudes legales de las autoridades públicas, incluso para cumplir con las demandas de seguridad nacional o de aplicación de la ley, según lo permita la ley.</p>
-        //         </li>
-        //         <li>
-        //             <p><strong>Con su consentimiento. </strong>Podemos compartir datos con terceros cuando contamos con su consentimiento.</p>
-        //         </li>
-        //         <li>
-        //             <p><strong>Con socios de publicidad y análisis. </strong>Consulte la sección titulada "Publicidad y análisis" a continuación.</p>
-        //         </li>
-        //     </ul>
-        //     <br />
-        //     <h3>Publicidad y análisis</h3>
-        //     <p>
-        //     </p>
-        //     <p>Utilizamos tecnologías de publicidad y análisis para comprender mejor su actividad en línea en nuestros Servicios para brindarle productos y servicios personalizados que puedan interesarle.</p>
-        //     <p>Podemos permitir que empresas de terceros, incluidas las redes publicitarias, publiquen anuncios, brinden otros servicios publicitarios y/o recopilen cierta información cuando visite nuestro sitio web. Las empresas de terceros pueden usar datos personales seudonimizados (p. ej., información de flujo de clics, tipo de navegador, hora y fecha, tema de los anuncios en los que se hizo clic o se desplazó) durante su visita a este sitio web para proporcionar anuncios sobre bienes y servicios que probablemente sean de su interés. interés para usted, en este sitio web y otros. Para obtener más información sobre la publicidad basada en intereses o para darse de baja de este tipo de publicidad, puede visitar <a href="http://optout.aboutads.info/?c=2&lang=EN">AboutAds.info /opciones</a> o <a href="http://optout.networkadvertising.org/?c=1">www.networkadvertising.org/choices</a>.</p>
-        //     <p>Algunas empresas de terceros también pueden usar tecnologías que no son cookies, como identificaciones estadísticas. Tenga en cuenta que es posible que su navegador web no le permita bloquear el uso de estas tecnologías que no son cookies, y es posible que la configuración del navegador que bloquea las cookies no tenga ningún efecto sobre dichas técnicas. Si la empresa de terceros utiliza tecnologías que no son cookies para publicidad basada en intereses, puede cancelar su suscripción en <a href="http://optout.networkadvertising.org/?c=1">www.networkadvertising.org/ elecciones</a>. Tenga en cuenta que la opción de exclusión de la industria solo se aplica al uso de publicidad basada en intereses y es posible que no se aplique al uso de análisis o atribución.</p>
-        //     <p>Algunos sitios web tienen funciones de "no rastrear" que le permiten indicarle a un sitio web que no lo rastree. Estas características no son todas uniformes. Actualmente no respondemos a esas señales.</p>
-        //     <p></p>
-        //     <br />
-        //     <h3>Google Analytics</h3>
-        //     <p>Utilizamos Google Analytics, un servicio de análisis proporcionado por Google LLC. Usamos este servicio para ayudar a analizar cómo los usuarios usan el Servicio, con miras a analizar el uso en todos los dispositivos y ofrecer mejoras para todos los usuarios. Para obtener más información sobre Google Analytics, visite su <a href="https://support.google.com/analytics/answer/6004245#zippy=%2Cour-privacy-policy">Política de privacidad</a>. Para optar por no participar en esta función mediante la instalación del complemento de exclusión de navegador de Google Analytics, haga clic <a href="https://tools.google.com/dlpage/gaoptout?hl=en">aquí</a >.</p>
-        //     <br />
-        //     <h3>Anuncios en el Servicio</h3>
-        //     <p>Podemos utilizar empresas de publicidad de terceros para publicar contenido y anuncios cuando visita nuestro sitio web. Para optar por no recibir publicidad basada en intereses, consulte la sección titulada "Publicidad y análisis" más arriba.</p>
-        //     <br />
-        //     <h3>Seguridad de datos</h3>
-        //     <p>Implementamos medidas de seguridad comercialmente razonables diseñadas para proteger su información. Sin embargo, a pesar de nuestros mejores esfuerzos, ninguna medida de seguridad es completamente impenetrable.</p>
-        //     <br />
-        //     <h3>Retención de datos</h3>
-        //     <p>Almacenamos la información que recopilamos sobre usted durante el tiempo que sea necesario para los fines para los que la recopilamos o para otros fines comerciales legítimos, incluido el cumplimiento de nuestras obligaciones legales, reglamentarias u otras.</p >
-        //     <br />
-        //     <h3>Derechos de privacidad de California</h3>
+            <p>Recopilamos información que usted nos proporciona directamente, como cuando envía un formulario o nos envía un mensaje con su información.</p>
+            <p>También podemos recibir información sobre usted de nuestros socios, incluidos, entre otros, socios de distribución, servicios de datos y empresas de marketing. Podemos combinar esta información con otra información que recopilamos de usted o sobre usted. En estos casos, nuestra Política de privacidad rige el manejo de la información combinada.</p>
+            <p>Nosotros y nuestros socios podemos recopilar la información indicada en esta política de privacidad mediante cookies, balizas web, píxeles y otras tecnologías similares. Estas tecnologías se utilizan para la autenticación, para almacenar sus preferencias o progreso, para análisis y para publicidad y análisis. Las cookies son pequeños archivos de texto que se almacenan en el ordenador del Usuario. Los usuarios pueden configurar su navegador para rechazar las cookies por completo, rechazar nuestras cookies en particular o eliminar las cookies. Sin embargo, esto puede causar que algunos o todos nuestros Servicios no funcionen en la computadora o dispositivo de dicho usuario.</p>
+            <br />
+            <h3>Cómo usamos su información</h3>
+            <p>Utilizamos la información que recopilamos sobre usted para proporcionar, mantener y mejorar nuestros Servicios y otras interacciones que tenemos con usted. Por ejemplo, usamos la información recopilada para:</p>
+            <ul>
+                <li>
+                    <p>Facilitar y mejorar nuestra experiencia en línea;</p>
+                </li>
+                <li>
+                    <p>Proporcionar y entregar productos y servicios, realizar autenticación, procesar transacciones y devoluciones, y enviarle información relacionada, incluidas confirmaciones, recibos, facturas, encuestas de experiencia del cliente y avisos relacionados con productos o Servicios;</p>
+                </li>
+                <li>
+                    <p>Procesar y entregar promociones;</p>
+                </li>
+                <li>
+                    <p>Responder a sus comentarios y preguntas y brindar servicio al cliente;</p>
+                </li>
+                <li>
+                    <p>Si nos ha indicado que desea recibir notificaciones o mensajes promocionales;</p>
+                </li>
+                <li>
+                    <p>Detectar, investigar y prevenir transacciones fraudulentas y otras actividades ilegales y proteger nuestros derechos y propiedad y otros;</p>
+                </li>
+                <li>
+                    <p>Cumplir con nuestras obligaciones legales y financieras;</p>
+                </li>
+                <li>
+                    <p>Supervisar y analizar tendencias, uso y actividades;</p>
+                </li>
+                <li>
+                    <p>Proporcionar y permitir que nuestros socios proporcionen publicidad y marketing dirigido a sus intereses.</p>
+                </li>
+            </ul>
+            <br />
+            <h3>Cómo podemos compartir información</h3>
+            <p>Podemos compartir su información personal en las siguientes situaciones:</p>
+            <ul>
+                <li>
+                    <p><strong>Proveedores de servicios de terceros. </strong>Podemos compartir datos con proveedores de servicios, vendedores, contratistas o agentes que completan transacciones o prestan servicios en nuestro nombre, como aquellos que nos ayudan con nuestro negocio y operaciones internas como envío y entrega, procesamiento de pagos, prevención de fraude , atención al cliente, tarjetas regalo, experiencias, personalización, marketing y publicidad;</p>
+                </li>
+                <li>
+                    <p><strong>Cambio en el negocio. </strong>Podemos compartir datos en relación con una transacción comercial corporativa, como una fusión o adquisición de todo o una parte de nuestro negocio a otra empresa, empresa conjunta, reorganización corporativa, insolvencia o quiebra, financiación o venta de activos de la empresa. ;</p>
+                </li>
+                <li>
+                    <p><strong>Para cumplir con la ley. </strong>Podemos compartir datos para facilitar el proceso legal a partir de solicitudes legales de las autoridades públicas, incluso para cumplir con las demandas de seguridad nacional o de aplicación de la ley, según lo permita la ley.</p>
+                </li>
+                <li>
+                    <p><strong>Con su consentimiento. </strong>Podemos compartir datos con terceros cuando contamos con su consentimiento.</p>
+                </li>
+                <li>
+                    <p><strong>Con socios de publicidad y análisis. </strong>Consulte la sección titulada "Publicidad y análisis" a continuación.</p>
+                </li>
+            </ul>
+            <br />
+            <h3>Publicidad y análisis</h3>
+            <p>
+            </p>
+            <p>Utilizamos tecnologías de publicidad y análisis para comprender mejor su actividad en línea en nuestros Servicios para brindarle productos y servicios personalizados que puedan interesarle.</p>
+            <p>Podemos permitir que empresas de terceros, incluidas las redes publicitarias, publiquen anuncios, brinden otros servicios publicitarios y/o recopilen cierta información cuando visite nuestro sitio web. Las empresas de terceros pueden usar datos personales seudonimizados (p. ej., información de flujo de clics, tipo de navegador, hora y fecha, tema de los anuncios en los que se hizo clic o se desplazó) durante su visita a este sitio web para proporcionar anuncios sobre bienes y servicios que probablemente sean de su interés. interés para usted, en este sitio web y otros. Para obtener más información sobre la publicidad basada en intereses o para darse de baja de este tipo de publicidad, puede visitar <a href="http://optout.aboutads.info/?c=2&lang=EN">AboutAds.info /opciones</a> o <a href="http://optout.networkadvertising.org/?c=1">www.networkadvertising.org/choices</a>.</p>
+            <p>Algunas empresas de terceros también pueden usar tecnologías que no son cookies, como identificaciones estadísticas. Tenga en cuenta que es posible que su navegador web no le permita bloquear el uso de estas tecnologías que no son cookies, y es posible que la configuración del navegador que bloquea las cookies no tenga ningún efecto sobre dichas técnicas. Si la empresa de terceros utiliza tecnologías que no son cookies para publicidad basada en intereses, puede cancelar su suscripción en <a href="http://optout.networkadvertising.org/?c=1">www.networkadvertising.org/ elecciones</a>. Tenga en cuenta que la opción de exclusión de la industria solo se aplica al uso de publicidad basada en intereses y es posible que no se aplique al uso de análisis o atribución.</p>
+            <p>Algunos sitios web tienen funciones de "no rastrear" que le permiten indicarle a un sitio web que no lo rastree. Estas características no son todas uniformes. Actualmente no respondemos a esas señales.</p>
+            <p></p>
+            <br />
+            <h3>Google Analytics</h3>
+            <p>Utilizamos Google Analytics, un servicio de análisis proporcionado por Google LLC. Usamos este servicio para ayudar a analizar cómo los usuarios usan el Servicio, con miras a analizar el uso en todos los dispositivos y ofrecer mejoras para todos los usuarios. Para obtener más información sobre Google Analytics, visite su <a href="https://support.google.com/analytics/answer/6004245#zippy=%2Cour-privacy-policy">Política de privacidad</a>. Para optar por no participar en esta función mediante la instalación del complemento de exclusión de navegador de Google Analytics, haga clic <a href="https://tools.google.com/dlpage/gaoptout?hl=en">aquí</a >.</p>
+            <br />
+            <h3>Anuncios en el Servicio</h3>
+            <p>Podemos utilizar empresas de publicidad de terceros para publicar contenido y anuncios cuando visita nuestro sitio web. Para optar por no recibir publicidad basada en intereses, consulte la sección titulada "Publicidad y análisis" más arriba.</p>
+            <br />
+            <h3>Seguridad de datos</h3>
+            <p>Implementamos medidas de seguridad comercialmente razonables diseñadas para proteger su información. Sin embargo, a pesar de nuestros mejores esfuerzos, ninguna medida de seguridad es completamente impenetrable.</p>
+            <br />
+            <h3>Retención de datos</h3>
+            <p>Almacenamos la información que recopilamos sobre usted durante el tiempo que sea necesario para los fines para los que la recopilamos o para otros fines comerciales legítimos, incluido el cumplimiento de nuestras obligaciones legales, reglamentarias u otras.</p >
+            <br />
+            <h3>Derechos de privacidad de California</h3>
 
-        //     <p>Si es residente de California y el procesamiento de su información personal está sujeto a la Ley de Privacidad del Consumidor de California ("CCPA"), tiene ciertos derechos con respecto a esa información personal. Bajo la CCPA, sujeto a ciertas excepciones, la "información personal" es cualquier información que identifique, se relacione, describa, sea razonablemente capaz de asociarse o razonablemente podría vincularse, directa o indirectamente, con un residente u hogar particular de California. </p>
-        //     <p>Si es residente de CA, tiene derecho a solicitar que le proporcionemos la siguiente información:</p>
-        //     <ul>
-        //         <li>
-        //             <p>Las categorías y piezas específicas de información personal que hemos recopilado sobre usted. Hemos divulgado las categorías de información en "Información que recopilamos", arriba.</p>
-        //         </li>
-        //         <li>
-        //             <p>Las categorías de fuentes de las que recopilamos información personal. Hemos revelado las categorías de fuentes en "Fuente de información y tecnologías de seguimiento", arriba.</p>
-        //         </li>
-        //         <li>
-        //             <p>Los propósitos para recopilar, usar o vender información personal. Hemos divulgado estos propósitos en "Cómo usamos su información" y "Cómo podemos compartir información" más arriba.</p>
-        //         </li>
-        //         <li>
-        //             <p>Las categorías de terceros con los que compartimos información personal. Hemos revelado las categorías de terceros en "Cómo podemos compartir información" arriba.</p>
-        //         </li>
-        //         <li>
-        //             <p>Las categorías de información personal divulgada sobre usted con fines comerciales. Hemos revelado las categorías de terceros en "Cómo podemos compartir información" arriba.</p>
-        //         </li>
-        //     </ul>
+            <p>Si es residente de California y el procesamiento de su información personal está sujeto a la Ley de Privacidad del Consumidor de California ("CCPA"), tiene ciertos derechos con respecto a esa información personal. Bajo la CCPA, sujeto a ciertas excepciones, la "información personal" es cualquier información que identifique, se relacione, describa, sea razonablemente capaz de asociarse o razonablemente podría vincularse, directa o indirectamente, con un residente u hogar particular de California. </p>
+            <p>Si es residente de CA, tiene derecho a solicitar que le proporcionemos la siguiente información:</p>
+            <ul>
+                <li>
+                    <p>Las categorías y piezas específicas de información personal que hemos recopilado sobre usted. Hemos divulgado las categorías de información en "Información que recopilamos", arriba.</p>
+                </li>
+                <li>
+                    <p>Las categorías de fuentes de las que recopilamos información personal. Hemos revelado las categorías de fuentes en "Fuente de información y tecnologías de seguimiento", arriba.</p>
+                </li>
+                <li>
+                    <p>Los propósitos para recopilar, usar o vender información personal. Hemos divulgado estos propósitos en "Cómo usamos su información" y "Cómo podemos compartir información" más arriba.</p>
+                </li>
+                <li>
+                    <p>Las categorías de terceros con los que compartimos información personal. Hemos revelado las categorías de terceros en "Cómo podemos compartir información" arriba.</p>
+                </li>
+                <li>
+                    <p>Las categorías de información personal divulgada sobre usted con fines comerciales. Hemos revelado las categorías de terceros en "Cómo podemos compartir información" arriba.</p>
+                </li>
+            </ul>
 
-        //     <p>También tiene derecho a solicitar que eliminemos su información personal de la CCPA en determinadas circunstancias, sujeto a determinadas excepciones.</p>
-        //     <p>Además, tiene derecho a decirnos que no vendamos su información personal de CCPA comunicándose con nosotros a kevindosmartinfenixzone@gmail.com o comunicándose con nosotros al +584124585154.</p>
-        //     <p>Por último, tiene derecho a no ser discriminado por ejercer los derechos establecidos en la CCPA.</p>
-        //     <p>Tenga en cuenta que tenemos derecho a tomar medidas razonables para verificar su identidad y la autenticidad de su solicitud.</p>
-        //     <br />
-        //     <h3>Derechos de privacidad de la UE</h3>
+            <p>También tiene derecho a solicitar que eliminemos su información personal de la CCPA en determinadas circunstancias, sujeto a determinadas excepciones.</p>
+            <p>Además, tiene derecho a decirnos que no vendamos su información personal de CCPA comunicándose con nosotros a kevindosmartinfenixzone@gmail.com o comunicándose con nosotros al +584124585154.</p>
+            <p>Por último, tiene derecho a no ser discriminado por ejercer los derechos establecidos en la CCPA.</p>
+            <p>Tenga en cuenta que tenemos derecho a tomar medidas razonables para verificar su identidad y la autenticidad de su solicitud.</p>
+            <br />
+            <h3>Derechos de privacidad de la UE</h3>
 
-        //     <p>Las personas ubicadas en ciertos países, incluidos el Espacio Económico Europeo (EEE) y el Reino Unido, tienen ciertos derechos legales en virtud del Reglamento general de protección de datos (GDPR) en relación con sus datos personales.</p>
-        //     <p>En la medida en que la información que recopilamos esté asociada con una persona física identificada o identificable y esté protegida como datos personales en virtud del RGPD, en esta Política de privacidad se la denominará "Datos personales".</p>
-        //     <p><strong>Solicitudes de acceso de interesados</strong></p>
-        //     <p>Sujeto a las exenciones previstas por la ley, puede tener derecho a solicitar:</p>
-        //     <ul>
-        //         <li>
-        //             <p>una copia de los Datos personales que tenemos sobre usted;</p>
-        //         </li>
-        //         <li>
-        //             <p>para corregir los Datos personales que tenemos sobre usted;</p>
-        //         </li>
-        //         <li>
-        //             <p>para eliminar su Cuenta o Datos Personales;</p>
-        //         </li>
-        //         <li>
-        //             <p>objetar el procesamiento de sus Datos Personales para ciertos fines;</p>
-        //         </li>
-        //     </ul>
+            <p>Las personas ubicadas en ciertos países, incluidos el Espacio Económico Europeo (EEE) y el Reino Unido, tienen ciertos derechos legales en virtud del Reglamento general de protección de datos (GDPR) en relación con sus datos personales.</p>
+            <p>En la medida en que la información que recopilamos esté asociada con una persona física identificada o identificable y esté protegida como datos personales en virtud del RGPD, en esta Política de privacidad se la denominará "Datos personales".</p>
+            <p><strong>Solicitudes de acceso de interesados</strong></p>
+            <p>Sujeto a las exenciones previstas por la ley, puede tener derecho a solicitar:</p>
+            <ul>
+                <li>
+                    <p>una copia de los Datos personales que tenemos sobre usted;</p>
+                </li>
+                <li>
+                    <p>para corregir los Datos personales que tenemos sobre usted;</p>
+                </li>
+                <li>
+                    <p>para eliminar su Cuenta o Datos Personales;</p>
+                </li>
+                <li>
+                    <p>objetar el procesamiento de sus Datos Personales para ciertos fines;</p>
+                </li>
+            </ul>
 
-        //     <p>Para acceder a sus derechos de privacidad, envíenos un correo electrónico a kevindosmartinfenixzone@gmail.com o escríbanos a Caracas Venezuela,
-        //         Caracas, Distrito Capital 1060 Venezuela.</p>
-        //     <p>Por lo general, procesamos las solicitudes en el plazo de un mes. Es posible que necesitemos solicitarle información específica para ayudarnos a confirmar su identidad y/o la jurisdicción en la que reside. Si su solicitud es complicada o si ha realizado una gran cantidad de solicitudes, es posible que nos lleve más tiempo. Le informaremos si necesitamos más de un mes para responder.</p>
-        //     <p><strong>Bases legales para el procesamiento de datos personales</strong></p>
-        //     <p>Podemos procesar sus Datos Personales bajo la ley de protección de datos aplicable en los siguientes fundamentos legales:</p>
-        //     <ul>
-        //         <li>
-        //             <p><strong>Necesidad contractual: </strong>podemos procesar sus Datos personales para celebrar o ejecutar un contrato con usted.</p>
-        //         </li>
-        //         <li>
-        //             <p><strong>Consentimiento: </strong>cuando haya dado su consentimiento para procesar sus Datos personales. Puede retirar su consentimiento en cualquier momento.</p>
-        //         </li>
-        //         <li>
-        //             <p><strong>Interés legítimo: </strong>procesamos sus Datos personales para brindarle nuestros Servicios, como para brindarle nuestra experiencia de usuario en línea, comunicarnos con usted, brindarle servicio al cliente, comercializar, analizar y mejorar nuestro negocio, y para proteger nuestros Servicios.</p>
-        //         </li>
-        //     </ul>
-        //     <br />
-        //     <h3>Limitaciones de edad</h3>
-        //     <p>Nuestro Servicio está destinado a adultos mayores de 18 años. No recopilamos a sabiendas información de identificación personal de niños. Si usted es padre o tutor legal y cree que su hijo menor de 13 años nos ha proporcionado información, envíenos un correo electrónico o escríbanos a la dirección que figura al final de esta Política de privacidad. Marque sus consultas como "Solicitud de información de COPPA".</p>
-        //     <br />
-        //     <h3>Cambios a esta Política de Privacidad</h3>
-        //     <p>Empleo Seguro puede cambiar esta Política de Privacidad de vez en cuando. Le animamos a visitar esta página para mantenerse informado. Si los cambios son importantes, podemos enviarle un aviso adicional a su dirección de correo electrónico o a través de nuestros Servicios. Su uso continuado de los Servicios indica su aceptación de la Política de Privacidad modificada.</p>
-        //     <br />
+            <p>Para acceder a sus derechos de privacidad, envíenos un correo electrónico a kevindosmartinfenixzone@gmail.com o escríbanos a Caracas Venezuela,
+                Caracas, Distrito Capital 1060 Venezuela.</p>
+            <p>Por lo general, procesamos las solicitudes en el plazo de un mes. Es posible que necesitemos solicitarle información específica para ayudarnos a confirmar su identidad y/o la jurisdicción en la que reside. Si su solicitud es complicada o si ha realizado una gran cantidad de solicitudes, es posible que nos lleve más tiempo. Le informaremos si necesitamos más de un mes para responder.</p>
+            <p><strong>Bases legales para el procesamiento de datos personales</strong></p>
+            <p>Podemos procesar sus Datos Personales bajo la ley de protección de datos aplicable en los siguientes fundamentos legales:</p>
+            <ul>
+                <li>
+                    <p><strong>Necesidad contractual: </strong>podemos procesar sus Datos personales para celebrar o ejecutar un contrato con usted.</p>
+                </li>
+                <li>
+                    <p><strong>Consentimiento: </strong>cuando haya dado su consentimiento para procesar sus Datos personales. Puede retirar su consentimiento en cualquier momento.</p>
+                </li>
+                <li>
+                    <p><strong>Interés legítimo: </strong>procesamos sus Datos personales para brindarle nuestros Servicios, como para brindarle nuestra experiencia de usuario en línea, comunicarnos con usted, brindarle servicio al cliente, comercializar, analizar y mejorar nuestro negocio, y para proteger nuestros Servicios.</p>
+                </li>
+            </ul>
+            <br />
+            <h3>Limitaciones de edad</h3>
+            <p>Nuestro Servicio está destinado a adultos mayores de 18 años. No recopilamos a sabiendas información de identificación personal de niños. Si usted es padre o tutor legal y cree que su hijo menor de 13 años nos ha proporcionado información, envíenos un correo electrónico o escríbanos a la dirección que figura al final de esta Política de privacidad. Marque sus consultas como "Solicitud de información de COPPA".</p>
+            <br />
+            <h3>Cambios a esta Política de Privacidad</h3>
+            <p>Empleo Seguro puede cambiar esta Política de Privacidad de vez en cuando. Le animamos a visitar esta página para mantenerse informado. Si los cambios son importantes, podemos enviarle un aviso adicional a su dirección de correo electrónico o a través de nuestros Servicios. Su uso continuado de los Servicios indica su aceptación de la Política de Privacidad modificada.</p>
+            <br />
 
-        //     <h3>Almacenamiento de Información en los Estados Unidos</h3>
-        //     <p>La información que mantenemos puede almacenarse tanto dentro como fuera de los Estados Unidos. Si vive fuera de los Estados Unidos, comprende y acepta que podemos transferir su información a los Estados Unidos y que es posible que las leyes estadounidenses no brinden el mismo nivel de protección que las de su país.</p>
-        //     <br />
-        //     <h3>Contáctenos</h3>
-        //     <p>Si tiene preguntas, comentarios o inquietudes sobre esta Política de privacidad, puede contactarnos en:</p>
-        //     <ul>
-        //         <li>
-        //             <p>Caracas Venezuela,
-        //                 Caracas, Distrito Capital 1060 Venezuela</p>
-        //         </li>
-        //         <li>
-        //             <p>https://empleoseguro.tech/#/acerca/contacto</p>
-        //         </li>
-        //         <li>
-        //             <p>kevindosmartinfenixzone@gmail.com</p>
-        //         </li>
-        //         <li>
-        //             <p>+584124585154</p>
-        //         </li>
-        //     </ul>
-        //     <br />
+            <h3>Almacenamiento de Información en los Estados Unidos</h3>
+            <p>La información que mantenemos puede almacenarse tanto dentro como fuera de los Estados Unidos. Si vive fuera de los Estados Unidos, comprende y acepta que podemos transferir su información a los Estados Unidos y que es posible que las leyes estadounidenses no brinden el mismo nivel de protección que las de su país.</p>
+            <br />
+            <h3>Contáctenos</h3>
+            <p>Si tiene preguntas, comentarios o inquietudes sobre esta Política de privacidad, puede contactarnos en:</p>
+            <ul>
+                <li>
+                    <p>Caracas Venezuela,
+                        Caracas, Distrito Capital 1060 Venezuela</p>
+                </li>
+                <li>
+                    <p>https://empleoseguro.tech/#/acerca/contacto</p>
+                </li>
+                <li>
+                    <p>kevindosmartinfenixzone@gmail.com</p>
+                </li>
+                <li>
+                    <p>+584124585154</p>
+                </li>
+            </ul>
+            <br />
+
+        </div>
     )
 }
 
