@@ -10,14 +10,24 @@ export const pagination = (array, status) => {
     return newArray
 }
 
-export const readingTime = (data) => {
-    const text = data
-    const wpm = 155;
-    const words = text.trim().split(/\s+/).length;
-    const time = Math.ceil(words / wpm);
-    return time
+export function readingTime(texto) {
+    if (!texto || typeof texto !== 'string') {
+        return 0; // Retorna 0 si el texto no es válido
+    }
+
+    const palabrasPorMinuto = 200; // Promedio de palabras por minuto
+    const palabras = texto.trim().split(/\s+/).length; // Cuenta las palabras en el texto
+    const minutos = palabras / palabrasPorMinuto; // Calcula los minutos de lectura
+    return Math.ceil(minutos); // Redondea hacia arriba para obtener el número entero de minutos
 }
 
 export const numeroAleatorio = () => {
     return Math.floor(Math.random() * 5);
 }
+
+export function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }

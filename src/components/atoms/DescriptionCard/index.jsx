@@ -2,7 +2,7 @@ import React from 'react'
 
 const DescriptionCard = ({ description, className }) => {
     return (
-        <div className={`${className} fs-6 `}
+        <div className={`${className} fs-6`}
             dangerouslySetInnerHTML={{
                 __html: description
             }}>

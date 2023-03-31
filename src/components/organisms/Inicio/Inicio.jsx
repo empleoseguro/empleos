@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { scrollToTop } from '../../../utils/functions'
+import AnuncioText from '../../atoms/AnuncioTest/AnuncioText'
 import CardNoticias from '../../molecules/CardNoticias'
 import CardRecomendaciones from '../../molecules/CardRecomendaciones'
+import MiniTips from '../../molecules/MiniTips'
 import Portada from '../../molecules/Portada/Portada'
 import './inicio.css'
 
@@ -9,6 +12,8 @@ export const Inicio = ({ data }) => {
     const [status, setStatus] = useState({ init: 0, final: 4 })
     const [statusNoti, setStatusNoti] = useState({ init: 0, final: 2 })
     const [active, setActive] = useState(1)
+
+    scrollToTop()
 
     const page = (type) => {
         setActive(type)
@@ -25,8 +30,10 @@ export const Inicio = ({ data }) => {
                 break;
             case 4:
                 pages = [12, 16]
+                break;
             default:
                 pages = [0, 4]
+                break;
         }
         setStatus({
             init: pages[0],
@@ -61,9 +68,11 @@ export const Inicio = ({ data }) => {
     return (
         <>
             <Portada />
-            <div className='row  mt-2 m-0 p-0 d-flex justify-content-center'>
-                <div className='col-2 d-none d-md-flex border border text-center border border-secondary '></div>
-                <div className='col-lg-6 m-0 p-0 mx-sm-3'>
+            <div className='h-100 mt-2 m-0 p-0 d-flex flex-column flex-lg-row  justify-content-around'>
+                <div className='col-12 col-lg-3 m-0 p-0  px-lg-1 d-none d-md-flex align-self-center align-self-lg-start justify-content-center text-center'>
+                    <AnuncioText />
+                </div>
+                <div className='col-12 col-lg-6 m-0 p-0 px-lg-2'>
                     {
                         filter(data, 'recomendaciones').slice(status?.init, status?.final).map((item, key) => (
                             <div key={key}>
@@ -72,9 +81,11 @@ export const Inicio = ({ data }) => {
                         ))
                     }
                 </div>
-                <div className='col-lg-3 m-0 p-0 row'>
-                    <div className='col-12 mb-3  order-sm-1 d-flex text-center border border-secondary '>ADS</div>
-                    <div className='col m-0 p-0'>
+                <div className='d-flex flex-column m-0 p-0  px-lg-1'>
+                    <div className='col-lg-12 mb-3  order-sm-1 d-flex text-center align-self-center'>
+                        <AnuncioText />
+                    </div>
+                    <div className='d-flex flex-column m-0 p-0'>
                         <div className='fs-6 fw-bold text-center bg-light p-1'>NOTICIAS</div>
                         {
                             filter(data, 'noticias').slice(statusNoti?.init, statusNoti?.final).map((item, key) => (
@@ -84,14 +95,14 @@ export const Inicio = ({ data }) => {
                             ))
                         }
                     </div>
+                    <div className='d-flex text-center align-self-center'>
+                        <MiniTips />
+                    </div>
 
                 </div>
-
-
-
             </div>
 
-            <nav className='d-flex justify-content-center pe-auto user-select-none'>
+            <nav className='d-flex justify-content-center pe-auto mt-1 user-select-none'>
                 <ul className="pagination pagination-sm">
 
                     <li className={`page-item ${active === 1 && 'active'}`}
