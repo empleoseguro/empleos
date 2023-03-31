@@ -17,17 +17,17 @@ export const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto fw-bold">
 
-                        <div class="nav-item disabled  dropdown">
-                            <Link to="/" class="dropdown-toggle disabled nav-link text-decoration-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div className="nav-item disabled  dropdown">
+                            <Link to="/" className="dropdown-toggle disabled nav-link text-decoration-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 CATEGORÍAS
                             </Link>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item disabled" href="#">Recomendaciones</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Noticias</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Mini Tips</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Preguntas frecuentes</a></li>
-                                <li><a class="dropdown-item disabled" href="#">Testimonios</a></li>
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a className="dropdown-item disabled" href='/'>Recomendaciones</a></li>
+                                <li><a className="dropdown-item disabled" href='/'>Noticias</a></li>
+                                <li><a className="dropdown-item disabled" href='/'>Mini Tips</a></li>
+                                <li><a className="dropdown-item disabled" href='/'>Preguntas frecuentes</a></li>
+                                <li><a className="dropdown-item disabled" href='/'>Testimonios</a></li>
                             </ul>
                         </div>
                         <Link to="/" className='"nav-item nav-link'>INICIO</Link>

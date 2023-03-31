@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
 import './alertpolitics.css'
 import { Link } from 'react-router-dom'
 import logo from '../../organisms/NavBar/favicon.svg'
@@ -15,9 +13,7 @@ const AlertPolitics = () => {
 }
 
 const CookiesPrivacy = () => {
-    const [statusAlert, setstatusAlert] = useState(false)
     const [modalCookiesConfig, setmodalCookiesConfig] = useState(false)
-    const [statusBanner, setstatusBanner] = useState('show')
     const [visibilityBanner, setvisibilityBanner] = useState(false)
 
     const hook = useThirdPartyCookieCheck()
@@ -28,16 +24,12 @@ const CookiesPrivacy = () => {
         }
     }, [])
 
-
-    // console.log(cookies.getAll({ path: '/' }))
-
     const aceptCookies = () => {
         aceptCookiesTerceros()
         localStorage.setItem('cookies-acept', true)
         window.dataLayer.push({ 'event': 'acept-analytics' })
         console.log('is: ',hook)
         setvisibilityBanner(false)
-        setstatusBanner('fade')
     }
 
     const aceptCookiesTerceros = () => {
@@ -46,7 +38,6 @@ const CookiesPrivacy = () => {
     }
 
     const denegateCookies = () => {
-        setstatusBanner('fade')
         setvisibilityBanner(false)
         return
     }
@@ -60,7 +51,7 @@ const CookiesPrivacy = () => {
         ustify-content-center border shadow mh-50'>
                             <div className='header-banner rounded-top px-4 py-2 text-light d-flex align-items-center justify-content-between'>
                                 <div>
-                                    <img className='logo' src={logo} loading="lazy" alt='logo' /> mpleo seguro
+                                    <img className='logo' src={logo} loading="lazy" alt='Icono de seguridad en línea para el sitio web de empleo seguro' /> mpleo seguro
                                 </div>
                                 <div className='fw-bold fs-6 text-light' style={{ cursor: 'pointer' }}>X</div>
                             </div>
@@ -70,7 +61,7 @@ const CookiesPrivacy = () => {
                                     Denegar el consentimiento puede provocar que las características relacionadas no estén disponibles.</p>
                                 <p>
                                     Utilice el botón “Aceptar” para dar su consentimiento. Utilice el botón “Rechazar” o cierre esta nota informativa para
-                                    continuar sin aceptar. Puede desactivarlas y configurar en cualquier momento. <a className='a-banner' onClick={() => setstatusAlert(true)}>ajustes</a>.
+                                    continuar sin aceptar. Puede desactivarlas y configurar en cualquier momento. <a className='a-banner'>ajustes</a>.
                                 </p>
                             </div>
                             <div className='footer-banner d-flex justify-content-between mx-3 mb-3'>
@@ -98,10 +89,6 @@ const CookiesPrivacy = () => {
 
 
 const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesConfig }) => {
-
-    const onChangeCookies = (e) => {
-        console.log(e.target.value)
-    }
 
     return (
         <div className='modal-banner  fixed-top p-1 w-100' tabIndex="-1">

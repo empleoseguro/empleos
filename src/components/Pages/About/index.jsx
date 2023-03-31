@@ -1,25 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import BaseTemplate from '../../templates/BaseTemplate'
+import React, { useState } from 'react'
+import { scrollToTop } from '../../../utils/functions'
+import MiniTips from '../../molecules/MiniTips'
 import './about.css'
 
-const About = ({ data }) => {
-
-    const { section } = useParams()
+const About = () => {
 
     const [mode, setMode] = useState('politics')
 
-
+    scrollToTop()
 
 
     const handleOnClick = (param) => {
         setMode(param)
     }
-
-    useEffect(() => {
-        handleOnClick(section)
-    }, [])
-
 
 
 
@@ -31,7 +24,8 @@ const About = ({ data }) => {
                     <div className='d-none d-sm-flex fs-6 text-secondary'>¡Bienvenido a nuestra sección de políticas, cookies, contacto, sobre nosotros y redes sociales! Aquí encontrarás información importante sobre nuestras políticas y prácticas, cómo nos comunicamos contigo, quiénes somos y cómo puedes encontrarnos en las redes sociales. Si tienes alguna pregunta o comentario, no dudes en contactarnos. ¡Gracias por visitarnos!</div>
                 </div>
                 <div className='d-flex flex-column justify-content-center align-items-center w-sm-25'>
-                    <img className='imagen-form' src='https://i.ibb.co/7SHJvWG/Security-On-bro.webp' alt='form image' loading='lazy' />
+                    <img className='imagen-form' src="https://i.ibb.co/7SHJvWG/Security-On-bro.webp"
+                        alt='Imagen de un hombre trabajando en seguridad informática para un empleo seguro' loading='lazy' />
                     <a href="https://storyset.com/work" className='text-decoration-none text-secondary w-100'>Work illustrations by Storyset</a>
                 </div>
 
@@ -42,20 +36,20 @@ const About = ({ data }) => {
                         <nav>
                             <ul className="nav flex-column">
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('politics')}>Politícas de privacidad</a>
+                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('politics')}>Politícas de privacidad</a>
                                 </li>
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('conditions')}>Condiciones de uso</a>
+                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('conditions')}>Condiciones de uso</a>
                                 </li>
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('contact')}>Contacto</a>
+                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('contact')}>Contacto</a>
                                 </li>
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('cookies')}>Política de cookies</a>
+                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('cookies')}>Política de cookies</a>
                                 </li>
                                 <li className="nav-item border-bottom">
 
-                                    <a className="nav-link fs-6 text-dark" href="#" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
+                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
                                 </li>
                             </ul>
                         </nav>
@@ -67,29 +61,8 @@ const About = ({ data }) => {
                     </div>
 
                 </div>
-                <div className='d-flex flex-column ms-2 fs-6'>
-                    <div className='text-light text-center border border-secondary mb-2 fw-bold rounded' style={{ backgroundColor: '#8e7ff7' }}>MINI TIPS</div>
-                    <div class="card text-white border-secondary mb-1" style={{ maxWidth: '18rem', maxHeight: '14rem', backgroundColor: '#8e7ff7' }}>
-
-                        <div class="card-body">
-                            <p class="card-text">Mantén una actitud positiva y enfócate en tus objetivos para tener éxito en la búsqueda de trabajo o en el trabajo mismo.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-secondary">José Castro</div>
-                    </div>
-                    <div class="card text-white border-secondary mb-1" style={{ maxWidth: '18rem', maxHeight: '14rem', backgroundColor: '#8e7ff7' }}>
-
-                        <div class="card-body">
-                            <p class="card-text">Investiga sobre la empresa o trabajo y prepárate para destacar en el puesto, incluyendo para entrevistas o reuniones importantes.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-secondary">Andry Martínez</div>
-                    </div>
-                    <div class="card text-white border-secondary mb-1" style={{ maxWidth: '18rem', maxHeight: '14rem', backgroundColor: '#8e7ff7' }}>
-
-                        <div class="card-body">
-                            <p class="card-text">Mantén una comunicación efectiva con colegas, empleadores y posibles empleadores para resolver problemas y establecer relaciones sólidas y exitosas.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-secondary">Anthony Valentin</div>
-                    </div>
+                <div className='ms-2 '>
+                    <MiniTips />
                 </div>
             </div>
         </div>
@@ -222,7 +195,7 @@ const Politics = () => {
         </p><h5><strong>Enlaces a Terceros</strong></h5><p>Este sitio web pudiera contener
             en laces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos
             enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido
-            y por lo tanto no somos responsables de los <a href="https://plantillaterminosycondicionestiendaonline.com/" target="_blank">
+            y por lo tanto no somos responsables de los <a href="https://plantillaterminosycondicionestiendaonline.com/" rel="noopener noreferrer">
                 términos o privacidad</a> ni de la protección de sus datos en esos otros sitios terceros
 
             . Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los
@@ -235,7 +208,7 @@ const Politics = () => {
                         cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea
                         requerido por un juez con un orden judicial.</p><p>Empleo seguro Se reserva el derecho de cambiar
                             los términos de la presente Política de Privacidad en cualquier momento.</p><p>Esta politica de
-                                privacidad se han generado en <a href="https://politicadeprivacidadplantilla.com/" target="_blank">
+                                privacidad se han generado en <a href="https://politicadeprivacidadplantilla.com/" rel="noopener noreferrer">
                 politicadeprivacidadplantilla.com</a>.<br />
         </p>
         <p>
@@ -360,7 +333,7 @@ const Cookiess = () => {
                     permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador.
                     Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan
                     acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la
-                    proporcione directamente <a href="https://noticiasvillarrealcf.es/" target="_blank">noticias</a>.
+                    proporcione directamente <a href="https://noticiasvillarrealcf.es/" rel="noopener noreferrer">noticias</a>.
                 Usted puede aceptar o negar el uso de cookies, sin embargo la mayoría de navegadores aceptan
                 cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede
                 cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible
@@ -381,8 +354,8 @@ const Contact = () => {
             <ul>
                 <li> <p><strong>Correo</strong>: <a href='#'>kevindosmartinfenixzone@gmail.com</a></p></li>
                 <li> <p><strong>WhatsApp</strong>: <a href='#'>+57 311 2313082</a></p></li>
-                <li> <p><strong>Instagram</strong>: <a href='https://www.instagram.com/empleoseguroes/' target="_blank">@empleoseguroes</a></p></li>
-                <li> <p><strong>Facebook</strong>: <a href='https://www.facebook.com/vidasinmaduro/' target="_blank">@empleosegurosas</a></p></li>
+                <li> <p><strong>Instagram</strong>: <a href='https://www.instagram.com/empleoseguroes/' rel="noopener noreferrer">@empleoseguroes</a></p></li>
+                <li> <p><strong>Facebook</strong>: <a href='https://www.facebook.com/vidasinmaduro/' rel="noopener noreferrer">@empleosegurosas</a></p></li>
             </ul>
         </div>
     )

@@ -26,6 +26,7 @@
   "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
+    "sass": "sass src/sass/custom.scss dist/custom.css",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -58,5 +59,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0"
   }
 }

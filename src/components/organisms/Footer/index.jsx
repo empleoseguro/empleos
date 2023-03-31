@@ -2,11 +2,9 @@ import React from 'react'
 import icon from '../../../images/favicon.svg'
 import './footer.css'
 import { ShareButton } from '../../atoms/ShareButton'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
-
-    const { section } = useParams()
 
     return (
         <div className='bg-dark mt-3'>
@@ -37,14 +35,4 @@ const Footer = () => {
     )
 }
 
-const validation = (params) => {
-    //hey mor
-    let dir
-    if (params === `empleos/about/${params}`) {
-        dir = '#'
-    } else {
-        dir = `empleos/about/${params}`
-    }
-    return dir
-}
 export default Footer

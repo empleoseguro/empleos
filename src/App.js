@@ -4,7 +4,7 @@ import { NavBar } from './components/organisms/NavBar/NavBar';
 import { Inicio } from './components/organisms/Inicio/Inicio';
 import SinglePost from './components/molecules/SinglePost';
 import Footer from './components/organisms/Footer';
-import React, { useEffect } from 'react';
+import React from 'react';
 import Formulario from './components/molecules/Formulario';
 import About from './components/Pages/About';
 import { useGetPosts } from './hooks/useGetPosts';
