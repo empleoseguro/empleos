@@ -11,6 +11,7 @@ import Facebook from '../../../images/facebook.svg'
 import Twitter from '../../../images/twitter.svg'
 import { readingTime, scrollToTop } from "../../../utils/functions";
 import AnuncioText from "../../atoms/AnuncioTest/AnuncioText";
+import ImageLazyLoad from "../../atoms/ImageLazyLoad/ImageLazyLoad";
 
 const SinglePost = ({ data: datos }) => {
 
@@ -70,20 +71,29 @@ const SinglePost = ({ data: datos }) => {
                                         Compartir post
                                     </div>
                                     <div className="row row-cols-3 gx-4 me-1">
-
-                                        <img src={Whatsapp} loading="lazy" alt="icon-share" style={{ width: '60px', height: '60px' }}
+                                        <ImageLazyLoad
+                                            src={Whatsapp}
+                                            alt="Compartir en WhatsApp"
+                                            width='60px'
+                                            height='60px'
                                             className="cursor-pointer"
                                             onClick={() => shareOnWhatsApp(url, data?.title)}
                                         />
 
-                                        <img src={Twitter} loading="lazy" alt="icon-share" style={{ width: '60px', height: '60px' }}
+                                        <ImageLazyLoad src={Twitter}
+                                            alt="Compartir en Twitter"
+                                            width='60px'
+                                            height='60px'
                                             className="cursor-pointer"
                                             onClick={() => shareOnTwitter(url, data?.title)}
                                         />
-                                        <img src={Facebook} loading="lazy" alt="compartir post de empleo seguro en facebook"
+                                        <ImageLazyLoad src={Facebook}
+                                            alt="Compartir en Facebook"
                                             className="cursor-pointer"
                                             onClick={() => shareOnFacebook(url)}
-                                            style={{ width: '60px', height: '60px' }} />
+                                            width='60px'
+                                            height='60px'
+                                        />
                                     </div>
                                 </div>
                             </div>

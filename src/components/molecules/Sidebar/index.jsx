@@ -4,7 +4,7 @@ import './sidebar.css'
 
 const Sidebar = ({ mostViewed }) => {
     return (
-        <div className='sidebar w-auto container p-0 h-50 rounded'>
+        <div className='sidebar w-auto container p-0 h-50 rounded' style={{maxWidth:420}}>
             <div className='bg-light px-1'>
                 <div className='fs-6 mt-2 ms-1 text-center'>TABLA DE CONTENIDO</div>
                 <ul className="list-group list-group-flush">

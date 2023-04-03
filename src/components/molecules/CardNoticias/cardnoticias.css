@@ -1,6 +1,6 @@
-.imagen {
+.imagen-noticias {
     object-fit: cover;
-    height: 180px;
+    
 }
 
 .title-noticias {
@@ -8,8 +8,6 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    line-height: 23px;
-    padding-top:3px;
     /* number of lines to show */
     -webkit-box-orient: vertical;
 }

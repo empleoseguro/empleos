@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import logo from '../../organisms/NavBar/favicon.svg'
 import Cookies from 'js-cookie'
 import useThirdPartyCookieCheck from '../../../hooks/useThirdPartyCookieCheck'
+import ImageLazyLoad from '../../atoms/ImageLazyLoad/ImageLazyLoad'
 
 
 const AlertPolitics = () => {
@@ -51,7 +52,7 @@ const CookiesPrivacy = () => {
         ustify-content-center border shadow mh-50'>
                             <div className='header-banner rounded-top px-4 py-2 text-light d-flex align-items-center justify-content-between'>
                                 <div>
-                                    <img className='logo' src={logo} loading="lazy" alt='Icono de seguridad en línea para el sitio web de empleo seguro' /> mpleo seguro
+                                    <ImageLazyLoad className='logo' src={logo} loading="lazy" alt='Icono en línea para el sitio web de empleo seguro' /> mpleo seguro
                                 </div>
                                 <div className='fw-bold fs-6 text-light' style={{ cursor: 'pointer' }}>X</div>
                             </div>
@@ -99,7 +100,7 @@ const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesC
                             <div className='header-banner border-bottom border-secondary rounded-top px-5 py-4 fs-5 text-light d-flex align-items-center justify-content-between'>
                                 <div className='d-flex flex-row'>
                                     <div className='logo-container'>
-                                        <img className='logo' src={logo} loading="lazy" alt='logo' />
+                                        <ImageLazyLoad className='logo' src={logo} alt='Empleo Seguro: Tu guía laboral en línea' />
 
                                     </div>mpleo seguro
                                 </div>

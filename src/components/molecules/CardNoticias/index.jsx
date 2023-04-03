@@ -5,6 +5,7 @@ import TitleCard from '../../atoms/TitleCard'
 import DescriptionCard from '../../atoms/DescriptionCard'
 import { readingTime } from '../../../utils/functions'
 import { Link } from 'react-router-dom'
+import ImageLazyLoad from '../../atoms/ImageLazyLoad/ImageLazyLoad'
 
 const CardNoticias = ({ item }) => {
     const [first, setfirst] = useState(null)
@@ -16,9 +17,13 @@ const CardNoticias = ({ item }) => {
     return (
         <Link to={first} className="text-decoration-none">
             <div className="d-flex bg-light flex-column w-100 user-select-none mb-2 mb-sm-3" style={{ cursor: 'pointer' }}>
-                <img loading='lazy' src={item['attributes']?.image} className="imagen" alt="imagen noticia" />
+                <ImageLazyLoad
+                    src={item['attributes']?.image}
+                    className="img-thumbnail"
+                    alt={`imagen referencial a ${item['attributes']?.title}`}
+                />
                 <div className="px-3 py-2">
-                    <TitleCard className="title-noticias fs-5" title={item['attributes']?.title} />
+                    <TitleCard className="fs-5 text-primary" title={item['attributes']?.title} />
                     <small className="card-text text-secondary text-noticias mt-1" >
                         <DescriptionCard description={item['attributes']?.description} />
                     </small>

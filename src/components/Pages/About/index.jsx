@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { scrollToTop } from '../../../utils/functions'
+import ImageLazyLoad from '../../atoms/ImageLazyLoad/ImageLazyLoad'
 import MiniTips from '../../molecules/MiniTips'
 import './about.css'
 
@@ -18,14 +19,17 @@ const About = () => {
 
     return (
         <div>
-            <div className='portada-form justify-content-around align-items-center d-flex flex-column flex-sm-row px-sm-3 mt-2 bg-dark'>
-                <div className='d-flex flex-column w-50  align-items-center'>
+            <div className=' justify-content-around align-items-center d-flex flex-column flex-sm-row px-sm-3 mt-1 bg-dark' style={{maxHeight:280}}>
+                <div className='d-flex flex-column w-100 align-items-center' style={{maxWidth:700}}>
                     <div className='fs-3 fw-bold text-center portada-text '>Todo lo que necesitas saber sobre nosotros y nuestra comunidad en línea</div>
                     <div className='d-none d-sm-flex fs-6 text-secondary'>¡Bienvenido a nuestra sección de políticas, cookies, contacto, sobre nosotros y redes sociales! Aquí encontrarás información importante sobre nuestras políticas y prácticas, cómo nos comunicamos contigo, quiénes somos y cómo puedes encontrarnos en las redes sociales. Si tienes alguna pregunta o comentario, no dudes en contactarnos. ¡Gracias por visitarnos!</div>
                 </div>
                 <div className='d-flex flex-column justify-content-center align-items-center w-sm-25'>
-                    <img className='imagen-form' src="https://i.ibb.co/7SHJvWG/Security-On-bro.webp"
-                        alt='Imagen de un hombre trabajando en seguridad informática para un empleo seguro' loading='lazy' />
+                    <ImageLazyLoad
+                        className='img-fluid'
+                        src="https://i.ibb.co/87N80dD/Security-On-bro.webp"
+                        alt='Imagen de un hombre trabajando en seguridad informática para un empleo seguro'
+                    />
                     <a href="https://storyset.com/work" className='text-decoration-none text-secondary w-100'>Work illustrations by Storyset</a>
                 </div>
 
@@ -36,20 +40,20 @@ const About = () => {
                         <nav>
                             <ul className="nav flex-column">
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('politics')}>Politícas de privacidad</a>
+                                    <button className="border-0 w-100 nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('politics')}>Politícas de privacidad</button>
                                 </li>
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('conditions')}>Condiciones de uso</a>
+                                    <button className="border-0 w-100 nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('conditions')}>Condiciones de uso</button>
                                 </li>
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('contact')}>Contacto</a>
+                                    <button className="border-0 w-100 nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('contact')}>Contacto</button>
                                 </li>
                                 <li className="nav-item border-bottom">
-                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('cookies')}>Política de cookies</a>
+                                    <button className="border-0 w-100 nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('cookies')}>Política de cookies</button>
                                 </li>
                                 <li className="nav-item border-bottom">
 
-                                    <a className="nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</a>
+                                    <button className="border-0 w-100 nav-link fs-6 text-dark cursor-pointer" onClick={() => handleOnClick('aboutus')}>¿Quiénes somos?</button>
                                 </li>
                             </ul>
                         </nav>
@@ -482,7 +486,6 @@ const Cookiess = () => {
                 cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede
                 cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible
                 que no pueda utilizar algunos de nuestros servicios.</p>
-            <a href='#' >Eliminar Cookies</a>
         </div>
     )
 }
@@ -496,10 +499,10 @@ const Contact = () => {
             <p>Ponemos a tu disposición diferentes medios para comunicarte con nosotros, como nuestras redes sociales, correo electrónico y número de teléfono. Estamos aquí para ayudarte y responder cualquier pregunta o inquietud que tengas. No dudes en contactarnos si necesitas ayuda en cualquier momento.</p>
             <p>En resumen, nuestro objetivo es brindarte la mejor experiencia posible en <strong>Empleo Seguro</strong>, y para ello, estamos siempre disponibles para recibir tus comentarios y sugerencias. Creemos que la comunicación es esencial para construir una relación duradera y satisfactoria con nuestros usuarios, y estamos dispuestos a escucharte en todo momento. ¡No dudes en ponerte en contacto con nosotros!</p>
             <ul>
-                <li> <p><strong>Correo</strong>: <a href='#'>kevindosmartinfenixzone@gmail.com</a></p></li>
-                <li> <p><strong>WhatsApp</strong>: <a href='#'>+57 311 2313082</a></p></li>
-                <li> <p><strong>Instagram</strong>: <a href='https://www.instagram.com/empleoseguroes/' rel="noopener noreferrer">@empleoseguroes</a></p></li>
-                <li> <p><strong>Facebook</strong>: <a href='https://www.facebook.com/vidasinmaduro/' rel="noopener noreferrer">@empleosegurosas</a></p></li>
+                <li> <p><strong>Correo</strong>: <button href='#'>kevindosmartinfenixzone@gmail.com</button></p></li>
+                <li> <p><strong>WhatsApp</strong>: <button href='#'>+57 311 2313082</button></p></li>
+                <li> <p><strong>Instagram</strong>: <button href='https://www.instagram.com/empleoseguroes/' rel="noopener noreferrer">@empleoseguroes</button></p></li>
+                <li> <p><strong>Facebook</strong>: <button href='https://www.facebook.com/vidasinmaduro/' rel="noopener noreferrer">@empleosegurosas</button></p></li>
             </ul>
         </div>
     )
