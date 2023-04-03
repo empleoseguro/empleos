@@ -3,6 +3,7 @@ import icon from '../../../images/favicon.svg'
 import './footer.css'
 import { ShareButton } from '../../atoms/ShareButton'
 import { Link } from 'react-router-dom'
+import ImageLazyLoad from '../../atoms/ImageLazyLoad/ImageLazyLoad'
 
 const Footer = () => {
 
@@ -11,7 +12,7 @@ const Footer = () => {
             <div className='mx-sm-5 mt-2 d-flex align-items-center justify-content-sm-around flex-column flex-sm-row py-4'>
                 <div className='d-flex flex-row align-items-center'>
                     <div className='me-3'>
-                        <img loading='lazy' className='icono' alt='logo de la compania' src={icon} />
+                        <ImageLazyLoad className='icono' alt='Logo de Empleo Seguro: Tu guía laboral en línea' src={icon} />
                     </div>
                     <ShareButton type='facebook' redes />
                     <ShareButton type='twitter' redes />

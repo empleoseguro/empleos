@@ -1,10 +1,11 @@
 import React from 'react'
+import ImageLazyLoad from '../ImageLazyLoad/ImageLazyLoad'
 
 
 const ImageCard = ({src, className}) => {
   return (
    <>
-    <img className={className} src={src} alt='imagen de cards' loading='lazy'/>
+    <ImageLazyLoad className={className} src={src} alt='imagen de cards empleo seguro'/>
    </>
   )
 }

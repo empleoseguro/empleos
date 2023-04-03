@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
 import favicon from './favicon.svg'
+import ImageLazyLoad from '../../atoms/ImageLazyLoad/ImageLazyLoad'
 
 export const NavBar = () => {
     //que ladilla
@@ -9,7 +10,7 @@ export const NavBar = () => {
         <><nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
             <div className="container">
                 <Link to="/" className="navbar-brand  d-flex flex-row align-items-center">
-                    <img loading='lazy' src={favicon} className='logo' height="28" alt="EmpleoSeguro Icon" />
+                    <ImageLazyLoad src={favicon} className='logo' height="28" alt="Empleo Seguro: Tu guía laboral en línea" />
                     <div className='nav-title ms-1 text-dark'>MPLEO SEGURO</div>
                 </Link>
                 <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

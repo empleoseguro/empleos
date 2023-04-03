@@ -5,12 +5,13 @@ import { readingTime } from '../../../utils/functions'
 import TitleCard from '../../atoms/TitleCard'
 import DescriptionCard from '../../atoms/DescriptionCard'
 import { Link } from 'react-router-dom'
+import ImageLazyLoad from '../../atoms/ImageLazyLoad/ImageLazyLoad'
 
 const CardRecomendaciones = ({ item }) => {
 
     return (
         <Link to={`/post/${item.id}#`} className="mycard shadow bg-light d-flex flex-column user-select-none mb-2 mb-sm-3 text-decoration-none" style={{ cursor: 'pointer' }}>
-            <img className='imagen' src={item['attributes']?.image} alt="ilusitracion de consejos" loading='lazy' />
+            <ImageLazyLoad className='img-thumbnail imagen-recomendaciones' src={item['attributes']?.image} alt={`ilusitracion de consejos: ${item['attributes']?.title}`} loading='lazy' />
             <div className='px-2 px-sm-4'>
                 <div className='header d-flex flex-row justify-content-between mt-2'>
 
@@ -20,8 +21,8 @@ const CardRecomendaciones = ({ item }) => {
                     <label className='autor fs-6 text-secondary'>Kevin Jose</label>
 
                 </div>
-                <TitleCard className="title-recomendaciones mt-1 fs-3" title={item['attributes']?.title} />
-                <DescriptionCard className="text-recomendaciones mt-2 fs-6" description={item['attributes']?.description} />
+                <TitleCard className="title-recomendaciones text-primary mt-1 fs-3" title={item['attributes']?.title} />
+                <DescriptionCard className="text-recomendaciones text-secondary mt-2 fs-6" description={item['attributes']?.description} />
 
 
             </div>

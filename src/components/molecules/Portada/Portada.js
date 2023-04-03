@@ -1,5 +1,6 @@
 import React from 'react'
 import { info } from '../../../info'
+import ImageLazyLoad from '../../atoms/ImageLazyLoad/ImageLazyLoad'
 import './portada.css'
 
 const Portada = () => {
@@ -14,9 +15,15 @@ const Portada = () => {
                 {
                     eslogan.map((item, key) => (
                         <div className={`carousel-item ${item.status}`} key={key}>
-                            <div className='texto-portada fs-1 text-center text-light'>{item.title}</div>
-                            <div className='d-flex flex-column w-100 align-items-center'>
-                                <img loading='lazy' className='image' alt={`imagen del eslogan: ${item.title}`} src={item.imagen} />
+                            <div className='texto-portada fs-1 p-2 p-sm-0 text-center text-light'>{item.title}</div>
+                            <div className='d-flex flex-column w-100 align-items-center d-none d-sm-flex'>
+                                <ImageLazyLoad
+                                    className='imagen-portada'
+                                    alt={`imagen del eslogan: ${item.title}`}
+                                    src={item.imagen}
+                                    height="200px"
+                                    width="1000px"
+                                />
                                 <a href="https://storyset.com/work" className='text-secondary text-decoration-none'>Work illustrations by Storyset</a>
                             </div>
 

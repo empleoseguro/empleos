@@ -1,6 +1,6 @@
-.imagen {
+.imagen-recomendaciones {
     object-fit: cover;
-   
+    max-height: 31.3vh;
 }
 
 .title {
