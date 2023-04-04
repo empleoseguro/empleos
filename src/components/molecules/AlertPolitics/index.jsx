@@ -46,7 +46,7 @@ const CookiesPrivacy = () => {
     return (
         visibilityBanner ?
             <>
-                <div className='modal-banner  fixed-top p-1 w-100' tabIndex="-1">
+                <div className='modal-banner d-none  fixed-top p-1 w-100' tabIndex="-1">
                     <div className='px-lg-5 mx-lg-5'>
                         <div className='container-banner botder-0 d-flex p-0 mt-2 mx-lg-5 flex-column  rounded d-block  bg-light text-dark j
         ustify-content-center border shadow mh-50'>
@@ -92,7 +92,7 @@ const CookiesPrivacy = () => {
 const DetailsCookiesPrivacy = ({ aceptCookies, denegateCookies, setmodalCookiesConfig }) => {
 
     return (
-        <div className='modal-banner  fixed-top p-1 w-100' tabIndex="-1">
+        <div className='modal-banner d-none  fixed-top p-1 w-100' tabIndex="-1">
             <div className='px-lg-4 mx-lg-4'>
                 <div className='px-lg-5 mx-lg-5'>
                     <div className='px-lg-5 mx-lg-5'>
